@@ -1,0 +1,12 @@
+.idea/*
+.venv/*
+__pycache__/*
+tab/*
+round/*
+select/*
+
+# generated files
+round.png
+selector.png
+tab.png
+agent_data.ini

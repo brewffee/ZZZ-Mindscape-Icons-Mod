@@ -22,7 +22,7 @@ def appy_mask(
         image = image.resize(new_size, Image.Resampling.LANCZOS)
 
     if image_rotation != 0:
-        image = image.rotate(-image_rotation, expand=True, resample=Image.BICUBIC)
+        image = image.rotate(-image_rotation, expand=True, resample=Image.Resampling.BICUBIC)
 
     img_x = -image_offset[0] + (mask.width - image.width) // 2
     img_y = -image_offset[1] + (mask.height - image.height) // 2

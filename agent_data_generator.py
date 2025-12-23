@@ -30,7 +30,7 @@ def run(mod_name: str = "MyMod", agent: str = None) -> None:
     with open('agents.json', 'rt', encoding='utf-8') as agent_data:
         agent_dict = json.load(agent_data)
 
-    with open('agent_data.ini', 'w', encoding='utf-8') as output:
+    with open(f"{mod_name.replace(" ", "")}.ini", 'w', encoding='utf-8') as output:
         output.write(f"; {mod_name} {'-' * (60 - len(mod_name))}\n\n")
 
         if agent:
@@ -39,6 +39,8 @@ def run(mod_name: str = "MyMod", agent: str = None) -> None:
         for name, skins in sorted(agent_dict.items()):
             output.write(f"; {name} {'-' * (60 - len(name))}\n\n")
 
+            # todo: hash generation should really be done separately from texture gen as the file gets rewritten
+            #   in single-agent mode
             for i, skin in enumerate(skins):
 
                 if ('select' in skin and skin['select']['hash']):

@@ -25,15 +25,18 @@ def create_texture_override(agent: str, skin_idx: int, hash_value: str, kind: Ha
         
         """)
 
-def run(mod_name: str = "MyMod") -> None:
-    agents: TypedDict[str, List[SkinData]]
+def run(mod_name: str = "MyMod", agent: str = None) -> None:
+    agent_dict: TypedDict[str, List[SkinData]]
     with open('agents.json', 'rt', encoding='utf-8') as agent_data:
-        agents = json.load(agent_data)
+        agent_dict = json.load(agent_data)
 
     with open('agent_data.ini', 'w', encoding='utf-8') as output:
         output.write(f"; {mod_name} {'-' * (60 - len(mod_name))}\n\n")
 
-        for name, skins in sorted(agents.items()):
+        if agent:
+            agent_dict = {agent: agent_dict[agent]}
+
+        for name, skins in sorted(agent_dict.items()):
             output.write(f"; {name} {'-' * (60 - len(name))}\n\n")
 
             for i, skin in enumerate(skins):

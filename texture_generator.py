@@ -55,6 +55,9 @@ def appy_mask(
     if final_size is not None:
         result = result.resize(final_size, Image.Resampling.LANCZOS)
 
+    if not os.path.exists(os.path.dirname(output_path)):
+        os.makedirs(os.path.dirname(output_path))
+
     result.save(
         output_path,
         pnginfo=png_info,
@@ -75,9 +78,9 @@ def gen_selector(agent: str, skin_idx: int, offset: Tuple[int, int] = (0, 0), sc
 
     appy_mask(
         size=(512, 500),
-        mask_path="selector.png",
+        mask_path="masks/selector.png",
         image_path=image,
-        output_path=f"select/{agent}{skin_str}.png",
+        output_path=f"export/select/{agent}{skin_str}.png",
         image_offset=offset,
         image_scale=scale,
         image_rotation=rotation
@@ -96,9 +99,9 @@ def gen_tab(agent: str, skin_idx: int, offset: Tuple[int, int] = (0, 0), scale: 
     appy_mask(
         size=(358, 128),
         final_size=(150, 54),
-        mask_path="tab.png",
+        mask_path="masks/tab.png",
         image_path=image,
-        output_path=f"tab/{agent}{skin_str}.png",
+        output_path=f"export/tab/{agent}{skin_str}.png",
         image_offset=offset,
         image_scale=scale,
         image_rotation=rotation
@@ -117,9 +120,9 @@ def gen_round(agent: str, skin_idx: int, offset: Tuple[int, int] = (0, 0), scale
     appy_mask(
         size=(284, 284),
         final_size=(150, 150),
-        mask_path="round.png",
+        mask_path="masks/round.png",
         image_path=image,
-        output_path=f"round/{agent}{skin_str}.png",
+        output_path=f"export/round/{agent}{skin_str}.png",
         image_offset=offset,
         image_scale=scale,
         image_rotation=rotation

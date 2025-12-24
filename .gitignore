@@ -4,10 +4,5 @@ __pycache__/*
 
 
 # generated files
-round.png
-selector.png
-tab.png
-tab/*
-round/*
-select/*
-MindscapeIcons.ini
+masks/*
+export/*

@@ -1,6 +1,7 @@
 from pathlib import Path
 from typing import List, Tuple, Union
 from PIL import Image, ImageDraw
+import os
 
 # calcs arc for rounded corners
 def calculate_arc_points(
@@ -44,7 +45,7 @@ def gen_mask(
         size: Tuple[float, float],
         scale_factor: int,
         points: List[Tuple[float, float]],
-        output_path: Union[str, Path] = "mask.png",
+        output_path: Union[str, Path] = "masks/mask.png",
         circle: bool = False
 ) -> None:
     width, height = size
@@ -57,6 +58,10 @@ def gen_mask(
 
     # gives softer look after downacale
     mask = mask.resize((width, height), Image.Resampling.LANCZOS)
+
+    if not os.path.exists(os.path.dirname(output_path)):
+        os.makedirs(os.path.dirname(output_path))
+
     mask.save(output_path, "PNG")
     print(f"Mask saved as {output_path}")
 
@@ -84,6 +89,6 @@ def tab_mask_points(scale_factor: int = 6) -> List[Tuple[float, float]]:
 
 
 def run() -> None:
-    gen_mask((512, 500), 4, selector_mask_points(4), "selector.png")
-    gen_mask((358, 128), 6, tab_mask_points(6), "tab.png")
-    gen_mask((284, 284), 6, [], "round.png", True)
+    gen_mask((512, 500), 4, selector_mask_points(4), "masks/selector.png")
+    gen_mask((358, 128), 6, tab_mask_points(6), "masks/tab.png")
+    gen_mask((284, 284), 6, [], "masks/round.png", True)

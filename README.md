@@ -33,7 +33,6 @@ in-game.
 
 ## Planned Features
 I plan to support additional sections in the future, including:
-- [ ] YiXuan's paid skin hash (i can't find it anywhere)
 - [ ] Character Selection screen portraits
 - [ ] Agent Trust screen icons
 - [ ] Agent Display portraits

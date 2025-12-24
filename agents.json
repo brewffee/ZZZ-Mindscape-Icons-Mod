@@ -2,7 +2,7 @@
   "Alice": [
     { 
       "tab": { "hash": "93ef2127", "offset": [-120, 100], "scale": 0.7, "rotation": 30 },
-      "select": { "hash": "7bf57b2b", "offset": [-50, 40], "scale": 0.7, "rotation": 0 },
+      "select": { "hash": "7bf57b2b", "offset": [-70, 70], "scale": 0.82, "rotation": 10 },
       "round": { "hash": "4c8624e0", "offset": [-55, 200], "scale": 0.8, "rotation": 0 }
     },
     { 
@@ -330,7 +330,7 @@
       "round": { "hash": "e79910aa", "offset": [-110, 105], "scale": 0.6, "rotation": 0 }
     },
     { 
-      "tab": { "hash": "????????", "offset": [10, 100], "scale": 0.5, "rotation": -60 },
+      "tab": { "hash": "0fa88007", "offset": [10, 100], "scale": 0.5, "rotation": -60 },
       "select": { "hash": "c691d56d", "offset": [-80, 90], "scale": 0.7, "rotation": -20 },
       "round": { "hash": "bd1f1f5e", "offset": [-110, 105], "scale": 0.6, "rotation": 0 }
     }

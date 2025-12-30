@@ -7,7 +7,7 @@
     },
     { 
       "tab": { "hash": "e65f485b", "offset": [-120, 100], "scale": 0.7, "rotation": 30 },
-      "select": { "hash": "be5c555f", "offset": [-50, 40], "scale": 0.7, "rotation": 0 },
+      "select": { "hash": "be5c555f", "offset": [-70, 70], "scale": 0.82, "rotation": 10 },
       "round": { "hash": "fded7f09", "offset": [-55, 200], "scale": 0.8, "rotation": 0 }
     }
   ],
@@ -68,7 +68,7 @@
   "Caesar": [
     { 
       "tab": { "hash": "d3e117bb", "offset": [-120, 50], "scale": 0.44, "rotation": 0 },
-      "select": { "hash": "a580c5c6", "offset": [-170, -4], "scale": 0.59, "rotation": 0 },
+      "select": { "hash": "a580c5c6", "offset": [-170, 0], "scale": 0.6, "rotation": 0 },
       "round": { "hash": "6bc4f466", "offset": [-200, 80], "scale": 0.6, "rotation": 0 }
     }
   ],
@@ -238,7 +238,7 @@
     { 
       "tab": { "hash": "a1c3c4ac", "offset": [180, 55], "scale": 0.4, "rotation": 0 },
       "select": { "hash": "d92ae487", "offset": [350, 0], "scale": 0.62, "rotation": 0 },
-      "round": { "hash": "237caec9", "offset": [310, 90], "scale": 0.54, "rotation": 0 }
+      "round": { "hash": "237caec9", "offset": [310, 82], "scale": 0.54, "rotation": 0 }
     }
   ],
   "Qingyi": [

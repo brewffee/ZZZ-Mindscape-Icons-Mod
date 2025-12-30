@@ -276,6 +276,13 @@
       "round": { "hash": "4e60c93f", "offset": [-50, 120], "scale": 0.6, "rotation": -30 }
     }
   ],
+  "Shunguang": [
+    {
+      "tab": { "hash": "8a4c7132", "offset": [-130, 205], "scale": 0.6, "rotation": -45 },
+      "select": { "hash": "1d3d3a23", "offset": [-230, 160], "scale": 0.8, "rotation": -20 },
+      "round": { "hash": "2dfa0ed0", "offset": [-180, 240], "scale": 0.7, "rotation": -30 }
+    }
+  ],
   "Soldier11": [
     { 
       "tab": { "hash": "728f0f41", "offset": [130, 100], "scale": 0.6, "rotation": 10 },
@@ -345,6 +352,13 @@
       "tab": { "hash": "a4340446", "offset": [50, -50], "scale": 0.6, "rotation": 0 },
       "select": { "hash": "ba9a27b0", "offset": [80, -64], "scale": 0.78, "rotation": 20 },
       "round": { "hash": "af2880ae", "offset": [100, -50], "scale": 0.7, "rotation": 0 }
+    }
+  ],
+  "Zhao": [
+    {
+      "tab": { "hash": "f8d54341", "offset": [32, -50], "scale": 0.48, "rotation": 25 },
+      "select": { "hash": "6104019e", "offset": [0, 8], "scale": 0.58, "rotation": 0 },
+      "round": { "hash": "90e4971d", "offset": [20, -10], "scale": 0.5, "rotation": 0 }
     }
   ],
   "ZhuYuan": [

@@ -289,7 +289,7 @@
     },
     {
       "tab": { "hash": "64f20e30", "offset": [-130, 205], "scale": 0.6, "rotation": -45 },
-      "select": { "hash": "33ac1c27", "offset": [-230, 160], "scale": 0.8, "rotation": -20 },
+      "select": { "hash": "11998cfc", "offset": [-230, 160], "scale": 0.8, "rotation": -20 },
       "round": { "hash": "2ca53475", "offset": [-180, 240], "scale": 0.7, "rotation": -30 }
     }
   ],

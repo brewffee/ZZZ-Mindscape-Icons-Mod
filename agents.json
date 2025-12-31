@@ -131,6 +131,11 @@
       "tab": { "hash": "cbe98417", "offset": [260, 110], "scale": 0.6, "rotation": 0 },
       "select": { "hash": "96cc573a", "offset": [340, 30], "scale": 0.7, "rotation": 0 },
       "round": { "hash": "7a22d3bb", "offset": [300, 140], "scale": 0.7, "rotation": 0 }
+    },
+    {
+      "tab": { "hash": "b44ac3ee", "offset": [260, 110], "scale": 0.6, "rotation": 0 },
+      "select": { "hash": "85760b49", "offset": [340, 30], "scale": 0.7, "rotation": 0 },
+      "round": { "hash": "b592dbb6", "offset": [300, 140], "scale": 0.7, "rotation": 0 }
     }
   ],
   "JuFufu": [
@@ -281,6 +286,11 @@
       "tab": { "hash": "8a4c7132", "offset": [-130, 205], "scale": 0.6, "rotation": -45 },
       "select": { "hash": "1d3d3a23", "offset": [-230, 160], "scale": 0.8, "rotation": -20 },
       "round": { "hash": "2dfa0ed0", "offset": [-180, 240], "scale": 0.7, "rotation": -30 }
+    },
+    {
+      "tab": { "hash": "64f20e30", "offset": [-130, 205], "scale": 0.6, "rotation": -45 },
+      "select": { "hash": "33ac1c27", "offset": [-230, 160], "scale": 0.8, "rotation": -20 },
+      "round": { "hash": "2ca53475", "offset": [-180, 240], "scale": 0.7, "rotation": -30 }
     }
   ],
   "Soldier11": [

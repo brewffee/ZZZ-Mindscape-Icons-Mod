@@ -338,8 +338,8 @@
       "round": { "hash": "dc932323", "offset": [-120, 110], "scale": 0.66, "rotation": 0 }
     },
     {
-      "tab": { "hash": "??", "offset": [-80, 100], "scale": 0.66, "rotation": 0 },
-      "select": { "hash": "??", "offset": [-80, 40], "scale": 0.7, "rotation": 0 },
+      "tab": { "hash": "b338a781", "offset": [-80, 100], "scale": 0.66, "rotation": 0 },
+      "select": { "hash": "51d6bb11", "offset": [-80, 40], "scale": 0.7, "rotation": 0 },
       "round": { "hash": "??", "offset": [-120, 110], "scale": 0.66, "rotation": 0 }
     }
   ],

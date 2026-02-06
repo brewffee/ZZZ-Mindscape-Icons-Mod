@@ -333,9 +333,9 @@
   ],
   "Sunna": [
     {
-      "tab": { "hash": "??", "offset": [-80, 100], "scale": 0.66, "rotation": 0 },
-      "select": { "hash": "??", "offset": [-80, 40], "scale": 0.7, "rotation": 0 },
-      "round": { "hash": "??", "offset": [-120, 110], "scale": 0.66, "rotation": 0 }
+      "tab": { "hash": "d90b8fb8", "offset": [-80, 100], "scale": 0.66, "rotation": 0 },
+      "select": { "hash": "f1edb9c3", "offset": [-80, 40], "scale": 0.7, "rotation": 0 },
+      "round": { "hash": "dc932323", "offset": [-120, 110], "scale": 0.66, "rotation": 0 }
     },
     {
       "tab": { "hash": "??", "offset": [-80, 100], "scale": 0.66, "rotation": 0 },

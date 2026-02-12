@@ -254,6 +254,11 @@
       "tab": { "hash": "46795a4a", "offset": [190, 150], "scale": 0.7, "rotation": 0 },
       "select": { "hash": "ee0f018a", "offset": [270, 122], "scale": 0.9, "rotation": 0 },
       "round": { "hash": "89d8b30e", "offset": [180, 150], "scale": 0.7, "rotation": 0 }
+    },
+    {
+      "tab": { "hash": "e2fe2a89", "offset": [190, 150], "scale": 0.7, "rotation": 0 },
+      "select": { "hash": "15b9c5ac", "offset": [270, 122], "scale": 0.9, "rotation": 0 },
+      "round": { "hash": "03b8a6b3", "offset": [180, 150], "scale": 0.7, "rotation": 0 }
     }
   ],
   "Piper": [

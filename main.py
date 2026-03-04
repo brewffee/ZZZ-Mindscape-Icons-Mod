@@ -4,6 +4,7 @@ import agent_data_generator
 # --------------------------------------------------------------
 
 MOD_NAME: str = "Mindscape Icons"
+MOD_VERSION: str = "2.6.3"
 
 # To update textures for a single agent, replace None with that agent's name
 CUR_AGENT = None

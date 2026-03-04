@@ -27,26 +27,22 @@
   ],
   "Aria": [
     { 
-      "tab": { "hash": "??????", "offset": [0, 40], "scale": 0.7, "rotation": 0 },
-      "select": { "hash": "??????", "offset": [0, 0], "scale": 0.7, "rotation": 0 },
-      "round": { "hash": "??????", "offset": [0, 70], "scale": 0.6, "rotation": 0 }
+      "tab": { "hash": "6b425446", "offset": [0, 40], "scale": 0.7, "rotation": 0 },
+      "select": { "hash": "93e3f638", "offset": [0, 0], "scale": 0.7, "rotation": 0 },
+      "round": { "hash": "c91dc3b0", "offset": [0, 70], "scale": 0.6, "rotation": 0 }
     },
     {
-      "tab": { "hash": "??????", "offset": [0, 40], "scale": 0.7, "rotation": 0 },
-      "select": { "hash": "??????", "offset": [0, 0], "scale": 0.7, "rotation": 0 },
-      "round": { "hash": "??????", "offset": [0, 70], "scale": 0.6, "rotation": 0 }
+      "tab": { "hash": "540da02f", "offset": [0, 40], "scale": 0.7, "rotation": 0 },
+      "select": { "hash": "0ccb351d", "offset": [0, 0], "scale": 0.7, "rotation": 0 },
+      "round": { "hash": "d09c0cad", "offset": [0, 70], "scale": 0.6, "rotation": 0 }
     }
   ],
   "AriaRobot": [
     {
-      "tab": { "hash": "??????", "offset": [0, 40], "scale": 0.7, "rotation": 0 },
-      "select": { "hash": "??????", "offset": [0, 0], "scale": 0.7, "rotation": 0 },
-      "round": { "hash": "??????", "offset": [0, 70], "scale": 0.6, "rotation": 0 }
+      "round": { "hash": "93cf3e5c", "offset": [0, 70], "scale": 0.6, "rotation": 0 }
     },
     {
-      "tab": { "hash": "??????", "offset": [0, 40], "scale": 0.7, "rotation": 0 },
-      "select": { "hash": "??????", "offset": [0, 0], "scale": 0.7, "rotation": 0 },
-      "round": { "hash": "??????", "offset": [0, 70], "scale": 0.6, "rotation": 0 }
+      "round": { "hash": "8f0591cd", "offset": [0, 70], "scale": 0.6, "rotation": 0 }
     }
   ],
   "Astra": [

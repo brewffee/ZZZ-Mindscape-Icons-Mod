@@ -79,8 +79,7 @@ def create_ini(mod_name: str = "MyMod") -> None:
     print('Finished generating agent data! :P')
 
 def export(mod_name: str = "MyMod", mod_version: str = "1.0") -> None:
-    source_dir = os.path.join("export", mod_name)
     zip_name = mod_name.lower().replace(" ", "_") + "_v" + mod_version
 
-    shutil.make_archive(os.path.join("export", zip_name), "zip", source_dir)
+    shutil.make_archive(os.path.join("export", zip_name), "zip", "export", mod_name)
     print(f"Finished exporting {mod_name} to {zip_name}.zip")

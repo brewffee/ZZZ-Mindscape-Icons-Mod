@@ -5,6 +5,7 @@ from typing import TypedDict, Literal, List
 from textwrap import dedent
 import json
 import os
+import shutil
 
 import texture_generator
 
@@ -32,9 +33,10 @@ def create_texture_override(agent: str, skin_idx: int, hash_value: str, kind: Ha
         
         """)
 
-def gen_textures(agent: str = None) -> None:
-    if not os.path.exists("export"):
-        os.makedirs("export")
+def gen_textures(mod_name: str = "MyMod", agent: str = None) -> None:
+    mod_folder = os.path.join("export", mod_name)
+    if not os.path.exists(mod_folder):
+        os.makedirs(mod_folder)
 
     agents_to_process = {agent: agent_dict[agent]} if agent else agent_dict
 
@@ -49,13 +51,15 @@ def gen_textures(agent: str = None) -> None:
             for skin_type, generator in skin_generators.items():
                 if skin.get(skin_type, {}).get('hash'):
                     hash, offset, scale, rotation = skin[skin_type].values()
-                    generator(name, i, offset, scale, rotation)
+                    generator(mod_folder, name, i, offset, scale, rotation)
 
 def create_ini(mod_name: str = "MyMod") -> None:
-    if not os.path.exists("export"):
-        os.makedirs("export")
+    mod_folder = os.path.join("export", mod_name)
+    if not os.path.exists(mod_folder):
+        os.makedirs(mod_folder)
 
-    with open(f"export/{mod_name.replace(" ", "")}.ini", 'w', encoding='utf-8') as output:
+    ini_path = os.path.join(mod_folder, f"{mod_name.replace(" ", "")}.ini")
+    with open(ini_path, 'w', encoding='utf-8') as output:
         output.write(f"; {mod_name} {'-' * (60 - len(mod_name))}\n\n")
 
         for name, skins in agent_dict.items():
@@ -73,3 +77,10 @@ def create_ini(mod_name: str = "MyMod") -> None:
                         ))
 
     print('Finished generating agent data! :P')
+
+def export(mod_name: str = "MyMod", mod_version: str = "1.0") -> None:
+    source_dir = os.path.join("export", mod_name)
+    zip_name = mod_name.lower().replace(" ", "_") + "_v" + mod_version
+
+    shutil.make_archive(os.path.join("export", zip_name), "zip", source_dir)
+    print(f"Finished exporting {mod_name} to {zip_name}.zip")

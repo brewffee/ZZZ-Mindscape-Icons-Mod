@@ -66,7 +66,7 @@ def appy_mask(
     print(f"Masked image saved as {output_path}")
 
 
-def gen_selector(agent: str, skin_idx: int, offset: Tuple[int, int] = (0, 0), scale: float = 1.0, rotation: float = 0.0) -> None:
+def gen_selector(dest: str, agent: str, skin_idx: int, offset: Tuple[int, int] = (0, 0), scale: float = 1.0, rotation: float = 0.0) -> None:
     skin_str: str = ""
     if (skin_idx > 0): skin_str = "Skin" + (str(skin_idx) if skin_idx > 1 else "")
 
@@ -80,13 +80,13 @@ def gen_selector(agent: str, skin_idx: int, offset: Tuple[int, int] = (0, 0), sc
         size=(512, 500),
         mask_path="masks/selector.png",
         image_path=image,
-        output_path=f"export/select/{agent}{skin_str}.png",
+        output_path=f"{dest}/select/{agent}{skin_str}.png",
         image_offset=offset,
         image_scale=scale,
         image_rotation=rotation
     )
 
-def gen_tab(agent: str, skin_idx: int, offset: Tuple[int, int] = (0, 0), scale: float = 1.0, rotation: float = 0.0) -> None:
+def gen_tab(dest: str, agent: str, skin_idx: int, offset: Tuple[int, int] = (0, 0), scale: float = 1.0, rotation: float = 0.0) -> None:
     skin_str: str = ""
     if (skin_idx > 0): skin_str = "Skin" + (str(skin_idx) if skin_idx > 1 else "")
 
@@ -101,13 +101,13 @@ def gen_tab(agent: str, skin_idx: int, offset: Tuple[int, int] = (0, 0), scale: 
         final_size=(150, 54),
         mask_path="masks/tab.png",
         image_path=image,
-        output_path=f"export/tab/{agent}{skin_str}.png",
+        output_path=f"{dest}/tab/{agent}{skin_str}.png",
         image_offset=offset,
         image_scale=scale,
         image_rotation=rotation
     )
 
-def gen_round(agent: str, skin_idx: int, offset: Tuple[int, int] = (0, 0), scale: float = 1.0, rotation: float = 0.0) -> None:
+def gen_round(dest: str, agent: str, skin_idx: int, offset: Tuple[int, int] = (0, 0), scale: float = 1.0, rotation: float = 0.0) -> None:
     skin_str: str = ""
     if (skin_idx > 0): skin_str = "Skin" + (str(skin_idx) if skin_idx > 1 else "")
 
@@ -122,7 +122,7 @@ def gen_round(agent: str, skin_idx: int, offset: Tuple[int, int] = (0, 0), scale
         final_size=(150, 150),
         mask_path="masks/round.png",
         image_path=image,
-        output_path=f"export/round/{agent}{skin_str}.png",
+        output_path=f"{dest}/round/{agent}{skin_str}.png",
         image_offset=offset,
         image_scale=scale,
         image_rotation=rotation

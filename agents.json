@@ -219,6 +219,18 @@
       "round": { "hash": "a9ecce2f", "offset": [65, 60], "scale": 0.6, "rotation": 0 }
     }
   ],
+  "Nangong": [
+    {
+      "tab": { "hash": "f19b08bb", "offset": [-90, 100], "scale": 0.66, "rotation": 0 },
+      "select": { "hash": "96dc628c", "offset": [-90, 100], "scale": 0.7, "rotation": 0 },
+      "round": { "hash": "8843a0d2", "offset": [-80, 120], "scale": 0.6, "rotation": 0 }
+    },
+    {
+      "tab": { "hash": "b34e9d55", "offset": [-90, 100], "scale": 0.66, "rotation": 0 },
+      "select": { "hash": "02f95f93", "offset": [-90, 100], "scale": 0.7, "rotation": 0 },
+      "round": { "hash": "2def8355", "offset": [-80, 120], "scale": 0.6, "rotation": 0 }
+    }
+  ],
   "Nekomata": [
     { 
       "tab": { "hash": "273ec328", "offset": [-60, 175], "scale": 0.6, "rotation": -70 },

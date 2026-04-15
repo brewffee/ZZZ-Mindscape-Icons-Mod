@@ -1,11 +1,11 @@
+import os
+
 from pathlib import Path
 from typing import List, Tuple, Union
 from PIL import Image, ImageDraw
-import os
 
 # calcs arc for rounded corners
-def calculate_arc_points(
-        start: Tuple[float, float],
+def calculate_arc_points(start: Tuple[float, float],
         end: Tuple[float, float],
         num_points: int = 24
 ) -> List[Tuple[float, float]]:
@@ -33,15 +33,14 @@ def calculate_arc_points(
     for i in range(num_points + 1):
         t = i / num_points
 
-        # B(t) = (1-t)^2 * start + 2(1-t)t * ctrk + t^2 * end
+        # B(t) = (1-t)^2 * start + 2(1-t)t * ctrl + t^2 * end
         x = (1-t)**2 * start[0] + 2*(1-t)*t * control_x + t**2 * end[0]
         y = (1-t)**2 * start[1] + 2*(1-t)*t * control_y + t**2 * end[1]
         points.append((x, y))
-        print(f"ppoint({x:.2f}, {y:.2f})")
 
     return points
 
-def gen_mask(
+def create_mask(
         size: Tuple[float, float],
         scale_factor: int,
         points: List[Tuple[float, float]],
@@ -49,12 +48,15 @@ def gen_mask(
         circle: bool = False
 ) -> None:
     width, height = size
+    scaled_size = (width * scale_factor, height * scale_factor)
 
-    mask = Image.new('RGBA', (width * scale_factor, height * scale_factor), (0, 0, 0, 0))
+    mask = Image.new('RGBA', scaled_size, (0, 0, 0, 0))
     draw = ImageDraw.Draw(mask)
 
-    if (circle): draw.ellipse((0, 0, width * scale_factor, height * scale_factor), fill=(0, 0, 0, 255))
-    else: draw.polygon(points, fill=(0, 0, 0, 255))
+    if circle:
+        draw.ellipse((0, 0, scaled_size), fill=(0, 0, 0, 255))
+    else:
+        draw.polygon(points, fill=(0, 0, 0, 255))
 
     # gives softer look after downacale
     mask = mask.resize((width, height), Image.Resampling.LANCZOS)
@@ -88,7 +90,7 @@ def tab_mask_points(scale_factor: int = 6) -> List[Tuple[float, float]]:
     return scaled_points
 
 
-def run() -> None:
-    gen_mask((512, 500), 4, selector_mask_points(4), "masks/selector.png")
-    gen_mask((358, 128), 6, tab_mask_points(6), "masks/tab.png")
-    gen_mask((284, 284), 6, [], "masks/round.png", True)
+def gen_masks() -> None:
+    create_mask((512, 500), 4, selector_mask_points(4), "masks/selector.png")
+    create_mask((358, 128), 6, tab_mask_points(6), "masks/tab.png")
+    create_mask((284, 284), 6, [], "masks/round.png", True)

@@ -1,10 +1,12 @@
-from pathlib import Path
-from typing import Tuple, Union
-from PIL import Image, PngImagePlugin
 import struct
 import os
 
-def appy_mask(
+from pathlib import Path
+from typing import Tuple, Union
+from PIL import Image, PngImagePlugin
+
+
+def apply_mask(
         size: Tuple[int, int],
         mask_path: Union[str, Path],
         image_path: Union[str, Path],
@@ -66,17 +68,29 @@ def appy_mask(
     print(f"Masked image saved as {output_path}")
 
 
-def gen_selector(dest: str, agent: str, skin_idx: int, offset: Tuple[int, int] = (0, 0), scale: float = 1.0, rotation: float = 0.0) -> None:
+def gen_selector(
+        source_dir: str,
+        dest: str,
+        agent: str,
+        skin_idx: int,
+        offset: Tuple[int, int] = (0, 0),
+        scale: float = 1.0,
+        rotation: float = 0.0
+) -> None:
     skin_str: str = ""
-    if (skin_idx > 0): skin_str = "Skin" + (str(skin_idx) if skin_idx > 1 else "")
+    if skin_idx > 0:
+        skin_str = "Skin" + (str(skin_idx) if skin_idx > 1 else "")
+
+    if source_dir != "sources":
+        skin_str += os.path.basename(source_dir)
 
     print(f"Creating selector for {agent} {skin_str} ({offset}, {scale}, {rotation})")
-    if not os.path.isfile(f"mindscapes/{agent}{skin_str}.png"):
-        image = f"mindscapes/{agent}.png"
+    if not os.path.isfile(f"{source_dir}/{agent}{skin_str}.png"):
+        image = f"{source_dir}/{agent}.png"
     else:
-        image: str = f"mindscapes/{agent}{skin_str}.png"
+        image: str = f"{source_dir}/{agent}{skin_str}.png"
 
-    appy_mask(
+    apply_mask(
         size=(512, 500),
         mask_path="masks/selector.png",
         image_path=image,
@@ -86,17 +100,29 @@ def gen_selector(dest: str, agent: str, skin_idx: int, offset: Tuple[int, int] =
         image_rotation=rotation
     )
 
-def gen_tab(dest: str, agent: str, skin_idx: int, offset: Tuple[int, int] = (0, 0), scale: float = 1.0, rotation: float = 0.0) -> None:
+def gen_tab(
+        source_dir: str,
+        dest: str,
+        agent: str,
+        skin_idx: int,
+        offset: Tuple[int, int] = (0, 0),
+        scale: float = 1.0,
+        rotation: float = 0.0
+) -> None:
     skin_str: str = ""
-    if (skin_idx > 0): skin_str = "Skin" + (str(skin_idx) if skin_idx > 1 else "")
+    if skin_idx > 0:
+        skin_str = "Skin" + (str(skin_idx) if skin_idx > 1 else "")
+
+    if source_dir != "sources":
+        skin_str += os.path.basename(source_dir)
 
     print(f"Creating tab for {agent} {skin_str} ({offset}, {scale}, {rotation})")
-    if not os.path.isfile(f"mindscapes/{agent}{skin_str}.png"):
-        image = f"mindscapes/{agent}.png"
+    if not os.path.isfile(f"{source_dir}/{agent}{skin_str}.png"):
+        image = f"{source_dir}/{agent}.png"
     else:
-        image: str = f"mindscapes/{agent}{skin_str}.png"
+        image: str = f"{source_dir}/{agent}{skin_str}.png"
 
-    appy_mask(
+    apply_mask(
         size=(358, 128),
         final_size=(150, 54),
         mask_path="masks/tab.png",
@@ -107,17 +133,29 @@ def gen_tab(dest: str, agent: str, skin_idx: int, offset: Tuple[int, int] = (0, 
         image_rotation=rotation
     )
 
-def gen_round(dest: str, agent: str, skin_idx: int, offset: Tuple[int, int] = (0, 0), scale: float = 1.0, rotation: float = 0.0) -> None:
+def gen_round(
+        source_dir: str,
+        dest: str,
+        agent: str,
+        skin_idx: int,
+        offset: Tuple[int, int] = (0, 0),
+        scale: float = 1.0,
+        rotation: float = 0.0
+) -> None:
     skin_str: str = ""
-    if (skin_idx > 0): skin_str = "Skin" + (str(skin_idx) if skin_idx > 1 else "")
+    if skin_idx > 0:
+        skin_str = "Skin" + (str(skin_idx) if skin_idx > 1 else "")
+
+    if source_dir != "sources":
+        skin_str += os.path.basename(source_dir)
 
     print(f"Creating round for {agent} {skin_str} ({offset}, {scale}, {rotation})")
-    if not os.path.isfile(f"mindscapes/{agent}{skin_str}.png"):
-        image = f"mindscapes/{agent}.png"
+    if not os.path.isfile(f"{source_dir}/{agent}{skin_str}.png"):
+        image = f"{source_dir}/{agent}.png"
     else:
-        image: str = f"mindscapes/{agent}{skin_str}.png"
+        image: str = f"{source_dir}/{agent}{skin_str}.png"
 
-    appy_mask(
+    apply_mask(
         size=(284, 284),
         final_size=(150, 150),
         mask_path="masks/round.png",

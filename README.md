@@ -3,7 +3,7 @@ This mod replaces most instances of Zenless Zone Zero's agent icons with their M
 see [releases](https://github.com/brewffee/ZZZ-Mindscape-Icons-Mod/releases).
 
 Included in the repository is the python tool used to generate the mod content. Agent image properties and hashes can be
-found and configured in the `agents.json` file, and source images can be found in the `mindscapes` folder.
+found and configured in the `agents.json` file, and source images can be found in the `sources` folder.
 
 ![The agent selection screen with Mindscape icons enabled](screenshots/selection.png)
 
@@ -27,9 +27,11 @@ page.
 ### Usage
 - Run `main.py` to generate mod content. The project folder can then be imported into the ZZMI Mods folder for use 
 in-game.
-  - If you only want to update a single agent, edit the `CUR_AGENT` variable in `main.py` to the desured agent's name.
-  - If you want to use a different image for an agent's skin art, you can add a new file in the `mindscapes` folder with
+  - If you only want to update a single agent, edit the `CUR_AGENT` constant in `main.py` to the desired agent's name.
+  - If you want to use a different image for an agent's skin art, you can add a new file in the `sources` folder with
   the format `<Agent>Skin.png`, `<Agent>Skin2.png`, etc.
+  - To add new toggleable icon variants, create a new directory in the `sources` folder and add it to the `SOURCE_DIRS` 
+  constant in `main.py`.
 
 ## Planned Features
 I plan to support additional sections in the future, including:

@@ -4,7 +4,7 @@ from masks import gen_masks
 # --------------------------------------------------------------
 
 MOD_NAME: str = "Mindscape Icons"
-MOD_VERSION: str = "2.7.1"
+MOD_VERSION: str = "2.7.2"
 
 # To update textures for a single agent, replace None with that agent's name
 CUR_AGENT: str | None = None

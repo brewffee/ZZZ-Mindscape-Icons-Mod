@@ -86,10 +86,17 @@
     }
   ],
   "Caesar": [
-    { 
+    {
       "tab": { "hash": "d3e117bb", "offset": [-120, 50], "scale": 0.44, "rotation": 0 },
       "select": { "hash": "a580c5c6", "offset": [-170, 0], "scale": 0.6, "rotation": 0 },
       "round": { "hash": "6bc4f466", "offset": [-200, 80], "scale": 0.6, "rotation": 0 }
+    }
+  ],
+  "Cissia": [
+    {
+      "tab": { "hash": "b764f7fc", "offset": [-80, 86], "scale": 0.58, "rotation": -15 },
+      "select": { "hash": "e69be151", "offset": [-40, 70], "scale": 0.7, "rotation": -30 },
+      "round": { "hash": "ae23fb06", "offset": [-120, 80], "scale": 0.6, "rotation": 0 }
     }
   ],
   "Corin": [

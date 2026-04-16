@@ -75,7 +75,7 @@ def create_ini_header(mod_name: str, source_dirs: list[str]) -> str:
             ; Constants {'-' * (60 - 9)}
             
             [Constants]
-            global $variant = 0
+            global persist $variant = 0
             
             [KeySwap]
             key = ctrl space

@@ -67,7 +67,7 @@ def create_mask(
     mask.save(output_path, "PNG")
     print(f"Mask saved as {output_path}")
 
-def selector_mask_points(scale_factor: int = 6) -> List[Tuple[float, float]]:
+def selector_mask_points(scale_factor: int = 4) -> List[Tuple[float, float]]:
     scaled_points = []
     for point in [
         *calculate_arc_points((137, 29), (173, 0), 24),     # topleft
@@ -89,8 +89,9 @@ def tab_mask_points(scale_factor: int = 6) -> List[Tuple[float, float]]:
     ]: scaled_points.append((point[0] * scale_factor, point[1] * scale_factor))
     return scaled_points
 
-
 def gen_masks() -> None:
+    print("Generating masks...")
     create_mask((512, 500), 4, selector_mask_points(4), "masks/selector.png")
     create_mask((358, 128), 6, tab_mask_points(6), "masks/tab.png")
     create_mask((284, 284), 6, [], "masks/round.png", True)
+    print("")

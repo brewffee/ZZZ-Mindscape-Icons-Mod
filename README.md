@@ -31,9 +31,16 @@ in-game.
   - If you want to use a different image for an agent's skin art, you can add a new file in the `sources` folder with
   the format `<Agent>Skin.png`, `<Agent>Skin2.png`, etc.
   - To add new toggleable icon variants, create a new directory in the `sources` folder and add it to the `SOURCE_DIRS` 
-  constant in `main.py`.
+  constant in `config.py`.
 
 ## Planned Features
+> [!IMPORTANT]
+> While I would like to implement these soon, the resources for these screens 
+> are used in many different places of the game. Replacing these resources
+> would require a lot of additional work and possibly a rewrite of the 
+> generator, nor could I guarantee these replacements will function
+> correctly across game updates.
+
 I plan to support additional sections in the future, including:
 - [ ] Character Selection screen portraits
 - [ ] Agent Trust screen icons

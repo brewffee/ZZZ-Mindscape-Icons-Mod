@@ -1,27 +1,27 @@
+import os
+import shutil
+
 from agent_data import gen_textures, create_ini, export
 from masks import gen_masks
-
-# --------------------------------------------------------------
-
-MOD_NAME: str = "Mindscape Icons"
-MOD_VERSION: str = "2.7.2"
-
-# To update textures for a single agent, replace None with that agent's name
-CUR_AGENT: str | None = None
-
-SOURCE_DIRS: list[str] = ["sources/M6", "sources/M3"]
-EXPORT_DIR: str = "export"
+from config import CLEAN_EXPORTS, EXPORT_DIR
 
 # --------------------------------------------------------------
 
 # Generate texture masks
 gen_masks()
 
+# Clean export dir
+if CLEAN_EXPORTS:
+    print("Force clean requested! Recreating export directory...")
+    shutil.rmtree(EXPORT_DIR, ignore_errors=True)
+    os.makedirs(EXPORT_DIR)
+    print("")
+
 # Generate mindscape textures
-gen_textures(MOD_NAME, CUR_AGENT, SOURCE_DIRS, EXPORT_DIR)
+gen_textures()
 
 # Generate INI file
-create_ini(MOD_NAME, SOURCE_DIRS, EXPORT_DIR)
+create_ini()
 
 # Export to ZIP
-export(MOD_NAME, MOD_VERSION)
+export()

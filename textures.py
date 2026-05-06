@@ -5,6 +5,8 @@ from pathlib import Path
 from typing import Tuple, Union
 from PIL import Image, PngImagePlugin
 
+from config import FALLBACK_MODE
+
 
 def apply_mask(
         size: Tuple[int, int],
@@ -70,6 +72,7 @@ def apply_mask(
 
 def gen_selector(
         source_dir: str,
+        fallback_dir: str,
         dest: str,
         agent: str,
         skin_idx: int,
@@ -88,7 +91,11 @@ def gen_selector(
     if not os.path.isfile(f"{source_dir}/{agent}{skin_str}.png"):
         image = f"{source_dir}/{agent}.png"
     else:
-        image: str = f"{source_dir}/{agent}{skin_str}.png"
+        image = f"{source_dir}/{agent}{skin_str}.png"
+
+    if not os.path.isfile(image):
+        print(f"Source file {image} not found! Skipping...")
+        return
 
     apply_mask(
         size=(512, 500),
@@ -102,6 +109,7 @@ def gen_selector(
 
 def gen_tab(
         source_dir: str,
+        fallback_dir: str,
         dest: str,
         agent: str,
         skin_idx: int,
@@ -122,6 +130,10 @@ def gen_tab(
     else:
         image: str = f"{source_dir}/{agent}{skin_str}.png"
 
+    if not os.path.isfile(image):
+        print(f"Source file {image} not found! Skipping...")
+        return
+
     apply_mask(
         size=(358, 128),
         final_size=(150, 54),
@@ -135,6 +147,7 @@ def gen_tab(
 
 def gen_round(
         source_dir: str,
+        fallback_dir: str,
         dest: str,
         agent: str,
         skin_idx: int,
@@ -154,6 +167,13 @@ def gen_round(
         image = f"{source_dir}/{agent}.png"
     else:
         image: str = f"{source_dir}/{agent}{skin_str}.png"
+
+    if not os.path.isfile(image):
+        print(f"Source file {image} not found!")
+
+        if FALLBACK_MODE == "skip":
+            print
+        return
 
     apply_mask(
         size=(284, 284),

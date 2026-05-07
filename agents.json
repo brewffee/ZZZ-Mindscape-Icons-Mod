@@ -224,6 +224,11 @@
       "tab": { "hash": "70d8c49c", "offset": [50, 40], "scale": 0.55, "rotation": 10 },
       "select": { "hash": "174309bb", "offset": [50, 86], "scale": 0.8, "rotation": 10 },
       "round": { "hash": "a9ecce2f", "offset": [65, 60], "scale": 0.6, "rotation": 0 }
+    },
+    {
+      "tab": { "hash": "3a9f8a9f", "offset": [50, 40], "scale": 0.55, "rotation": 10 },
+      "select": { "hash": "ac04c2f1", "offset": [50, 86], "scale": 0.8, "rotation": 10 },
+      "round": { "hash": "????????", "offset": [65, 60], "scale": 0.6, "rotation": 0 }
     }
   ],
   "Nangong": [
@@ -281,6 +286,13 @@
       "tab": { "hash": "5aef8344",  "offset": [100, -40], "scale": 0.55, "rotation": -30 },
       "select": { "hash": "613545a0", "offset": [100, -50], "scale": 0.62, "rotation": -30 },
       "round": { "hash": "027ddb95", "offset": [100, -20], "scale": 0.55, "rotation": -30 }
+    }
+  ],
+  "Promeia": [
+    {
+      "tab": { "hash": "369964bc", "offset": [410, 210], "scale": 0.7, "rotation": 10 },
+      "select": { "hash": "d01d1ebf", "offset": [370, 300], "scale": 0.75, "rotation": 30 },
+      "round": { "hash": "b675e3fa", "offset": [310, 330], "scale": 0.7, "rotation": 30 }
     }
   ],
   "Pulchra": [

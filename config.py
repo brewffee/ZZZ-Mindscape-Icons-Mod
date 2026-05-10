@@ -1,5 +1,5 @@
 MOD_NAME: str = "Mindscape Icons"
-MOD_VERSION: str = "2.8.1"
+MOD_VERSION: str = "2.8.2"
 
 # To update textures for a single agent, replace None with that agent's name
 CUR_AGENT: str | None = None

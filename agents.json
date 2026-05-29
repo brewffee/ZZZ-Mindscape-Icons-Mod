@@ -323,6 +323,13 @@
       "round": { "hash": "87aaa68a", "offset": [-30, 80], "scale": 0.6, "rotation": 100 }
     }
   ],
+    "SBilly": [
+    {
+      "tab": { "hash": "671b64a2", "offset": [140, 160], "scale": 0.82, "rotation": 0 },
+      "select": { "hash": "012eacab", "offset": [160, 85], "scale": 0.88, "rotation": 0 },
+      "round": { "hash": "fdbfdf6b", "offset": [120, 160], "scale": 0.8, "rotation": 0 }
+    }
+  ],
   "Seed": [
     { 
       "tab": { "hash": "5088013d", "offset": [190, 98], "scale": 0.6, "rotation": 0 },

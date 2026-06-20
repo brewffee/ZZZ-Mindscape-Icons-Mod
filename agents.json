@@ -302,6 +302,13 @@
       "round": { "hash": "237caec9", "offset": [310, 82], "scale": 0.54, "rotation": 0 }
     }
   ],
+  "Pyrois": [
+    {
+      "tab": { "hash": "75ee595e", "offset": [-350, 180], "scale": 0.5, "rotation": -30 },
+      "select": { "hash": "8108a7b1", "offset": [-420, 0], "scale": 0.61, "rotation": 0 },
+      "round": { "hash": "fa1116e4", "offset": [-420, 30], "scale": 0.55, "rotation": 0 }
+    }
+  ],
   "Qingyi": [
     { 
       "tab": { "hash": "6a4daa3a", "offset": [110, 20], "scale": 0.5, "rotation": 0 },
@@ -387,6 +394,18 @@
       "tab": { "hash": "7d4b7bd0", "offset": [100, 90], "scale": 0.55, "rotation": 0 },
       "select": { "hash": "7c87a91d", "offset": [100, 100], "scale": 0.8, "rotation": 30 },
       "round": { "hash": "8f4ba37c", "offset": [80, 160], "scale": 0.66, "rotation": 30 }
+    }
+  ],
+  "Velina": [
+    {
+      "tab": { "hash": "5e7e9657", "offset": [-150, 230], "scale": 1, "rotation": 0 },
+      "select": { "hash": "60b653bf", "offset": [-150, 130], "scale": 1, "rotation": 0 },
+      "round": { "hash": "4a84b837", "offset": [-150, 230], "scale": 0.95, "rotation": 0 }
+    },
+    {
+      "tab": { "hash": "fbe42396", "offset": [-150, 230], "scale": 1, "rotation": 0 },
+      "select": { "hash": "8d0ac27d", "offset": [-150, 130], "scale": 1, "rotation": 0 },
+      "round": { "hash": "080c1659", "offset": [-150, 230], "scale": 0.95, "rotation": 0 }
     }
   ],
   "Vivian": [

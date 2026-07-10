@@ -262,6 +262,13 @@
       "round": { "hash": "b5da3f40", "offset": [130, 110], "scale": 0.6, "rotation": 0 }
     }
   ],
+  "Norma": [
+    {
+      "tab": { "hash": "6350ab0a", "offset": [-120, 80], "scale": 0.7, "rotation": 0 },
+      "select": { "hash": "0d5d76d4", "offset": [-120, 60], "scale": 0.8, "rotation": 0 },
+      "round": { "hash": "b52464c5", "offset": [-120, 80], "scale": 0.8, "rotation": 0 }
+    }
+  ],
   "Orphie": [
     { 
       "tab": { "hash": "19ccda9d", "offset": [60, 80], "scale": 0.66, "rotation": 30 },

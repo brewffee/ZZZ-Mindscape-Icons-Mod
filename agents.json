@@ -323,6 +323,28 @@
       "round": { "hash": "c15c0321", "offset": [120, 55], "scale": 0.6, "rotation": 0 }
     }
   ],
+  "Remielle": [
+    {
+      "tab": { "hash": "f9736e2a", "offset": [-10, 155], "scale": 0.8, "rotation": -20 },
+      "select": { "hash": "389f3c5f", "offset": [25, 65], "scale": 0.8, "rotation": -10 },
+      "round": { "hash": "9411f320", "offset": [-10, 155], "scale": 0.8, "rotation": -10 }
+    },
+    {
+      "tab": { "hash": "217abe7b", "offset": [190, 80], "scale": 0.6, "rotation": 0 },
+      "select": { "hash": "4c468c78", "offset": [260, 10], "scale": 0.7, "rotation": 0 },
+      "round": { "hash": "", "offset": [190, 100], "scale": 0.6, "rotation": 0 }
+    },
+    {
+      "tab": { "hash": "613bd6ab", "offset": [190, 80], "scale": 0.6, "rotation": 0 },
+      "select": { "hash": "033d8649", "offset": [260, 10], "scale": 0.7, "rotation": 0 },
+      "round": { "hash": "", "offset": [190, 100], "scale": 0.6, "rotation": 0 }
+    },
+    {
+      "tab": { "hash": "f1eeaad6", "offset": [190, 80], "scale": 0.6, "rotation": 0 },
+      "select": { "hash": "488c2e84", "offset": [260, 10], "scale": 0.7, "rotation": 0 },
+      "round": { "hash": "", "offset": [190, 100], "scale": 0.6, "rotation": 0 }
+    }
+  ],
   "Rina": [
     { 
       "tab": { "hash": "c9a1ebb6", "offset": [190, 80], "scale": 0.6, "rotation": 0 },
@@ -337,7 +359,7 @@
       "round": { "hash": "87aaa68a", "offset": [-30, 80], "scale": 0.6, "rotation": 100 }
     }
   ],
-    "SBilly": [
+  "SBilly": [
     {
       "tab": { "hash": "671b64a2", "offset": [140, 160], "scale": 0.82, "rotation": 0 },
       "select": { "hash": "012eacab", "offset": [160, 85], "scale": 0.88, "rotation": 0 },

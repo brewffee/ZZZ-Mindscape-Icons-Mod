@@ -198,6 +198,11 @@
       "tab": { "hash": "66494aea", "offset": [-40, 10], "scale": 0.66, "rotation": 0 },
       "select": { "hash": "0B482873", "offset": [-20, -40], "scale": 0.7, "rotation": 0 },
       "round": { "hash": "7ac49f1e", "offset": [-40, 20], "scale": 0.7, "rotation": 0 }
+    },
+    {
+      "tab": { "hash": "f4ec9dc2", "offset": [-40, 10], "scale": 0.66, "rotation": 0 },
+      "select": { "hash": "f0c25ba0", "offset": [-20, -40], "scale": 0.7, "rotation": 0 },
+      "round": { "hash": "c46cd543", "offset": [-40, 20], "scale": 0.7, "rotation": 0 }
     }
   ],
   "Lycaon": [
@@ -332,17 +337,17 @@
     {
       "tab": { "hash": "217abe7b", "offset": [-10, 155], "scale": 0.8, "rotation": -20 },
       "select": { "hash": "4c468c78", "offset": [25, 65], "scale": 0.8, "rotation": -10 },
-      "round": { "hash": "????????", "offset": [-10, 155], "scale": 0.8, "rotation": -10 }
+      "round": { "hash": "fa502f0c", "offset": [-10, 155], "scale": 0.8, "rotation": -10 }
     },
     {
       "tab": { "hash": "613bd6ab", "offset": [-10, 155], "scale": 0.8, "rotation": -20 },
       "select": { "hash": "033d8649", "offset": [25, 65], "scale": 0.8, "rotation": -10 },
-      "round": { "hash": "????????", "offset": [-10, 155], "scale": 0.8, "rotation": -10 }
+      "round": { "hash": "ee92981a", "offset": [-10, 155], "scale": 0.8, "rotation": -10 }
     },
     {
       "tab": { "hash": "f1eeaad6", "offset": [-10, 155], "scale": 0.8, "rotation": -20 },
       "select": { "hash": "488c2e84", "offset": [25, 65], "scale": 0.8, "rotation": -10 },
-      "round": { "hash": "????????", "offset": [-10, 155], "scale": 0.8, "rotation": -10 }
+      "round": { "hash": "1ff8e74e", "offset": [-10, 155], "scale": 0.8, "rotation": -10 }
     }
   ],
   "Rina": [

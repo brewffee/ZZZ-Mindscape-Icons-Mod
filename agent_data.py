@@ -49,7 +49,8 @@ def create_texture_override(agent: str, skin_idx: int, source_dirs: list[str], h
         override_string = dedent(f"""
             [TextureOverride{agent}{skin_str}{kind}]
             hash = {hash_value}
-            """)
+            if $use{kind} == 1
+            \t""")
 
         resource_string = ""
 
@@ -58,15 +59,15 @@ def create_texture_override(agent: str, skin_idx: int, source_dirs: list[str], h
             resource_name = f"{agent}{skin_str}{variant}{kind}"
 
             override_string += dedent(f"""\
-                {"else" if i > 0 else ""} if $variant == {i}
-                    this = Resource{resource_name}
-                """)
+                   {"\telse " if i > 0 else "\t"}if $variant == {i}
+                            this = Resource{resource_name}
+                    """)
 
             resource_string += dedent(f"""\
                 [Resource{resource_name}]
                 filename = {file_name}
                 """)
-        override_string += "endif\n"
+        override_string += "    endif\nendif\n"
 
         return override_string + resource_string
     else:
@@ -75,7 +76,9 @@ def create_texture_override(agent: str, skin_idx: int, source_dirs: list[str], h
         return dedent(f"""        
             [TextureOverride{agent}{skin_str}{kind}]
             hash = {hash_value}
-            this = Resource{agent}{skin_str}{variant}{kind}
+            if $use{kind} == 1
+                this = Resource{agent}{skin_str}{variant}{kind}
+            endif
             [Resource{agent}{skin_str}{variant}{kind}]
             filename = {file_name}
             """)
@@ -89,11 +92,29 @@ def create_ini_header(mod_name: str, source_dirs: list[str]) -> str:
             
             [Constants]
             global persist $variant = 0
+            global persist $useSelect = 1
+            global persist $useTab = 1
+            global persist $useRound = 1
             
-            [KeySwap]
+            [KeySwapVariant]
             key = ctrl space
             type = cycle
             $variant = {','.join(str(i) for i in range(len(source_dirs)))}
+            
+            [KeyToggleSelect]
+            key = ctrl alt shift 1
+            type = cycle
+            $useSelect = 0,1
+            
+            [KeyToggleTab]
+            key = ctrl alt shift 2
+            type = cycle
+            $useTab = 0,1
+            
+            [KeyToggleRound]
+            key = ctrl alt shift 3
+            type = cycle
+            $useRound = 0,1
         
             """)
 
@@ -112,7 +133,7 @@ def gen_textures() -> None:
     agents_to_process = {CUR_AGENT: agent_dict[CUR_AGENT]} if CUR_AGENT else agent_dict
 
     skin_generators = {
-        'select': textures.gen_selector,
+        'select': textures.gen_select,
         'tab': textures.gen_tab,
         'round': textures.gen_round
     }

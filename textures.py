@@ -70,7 +70,7 @@ def apply_mask(
     print(f"Masked image saved as {output_path}")
 
 
-def gen_selector(
+def gen_select(
         source_dir: str,
         fallback_dir: str,
         dest: str,

@@ -17,3 +17,6 @@ FALLBACK_MODE: str = "original"
 
 # Should the export directory be cleaned before generation?
 CLEAN_EXPORTS: bool = True
+
+# Should INIs be split by type (Select/Tab/Round)?
+SEPARATE_INIS: bool = True

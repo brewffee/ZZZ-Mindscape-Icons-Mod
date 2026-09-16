@@ -1,0 +1,21 @@
+{
+  "Anby": {
+    "StreetStreak": {
+      "tab": { "hash": "fcc6b33f", "offset": [-50, 36], "scale": 0.55, "rotation": 0 },
+      "select": { "hash": "ea820cf1", "offset": [-50, 0], "scale": 0.7, "rotation": 0 },
+      "round": { "hash": "6ccdc893", "offset": [-50, 60], "scale": 0.6, "rotation": 0 }
+    }
+  },
+  "Aria": {
+    "EnergeticIdol": {
+      "tab": { "hash": "6b425446", "offset": [0, 40], "scale": 0.7, "rotation": 0 },
+      "select": { "hash": "93e3f638", "offset": [0, 0], "scale": 0.7, "rotation": 0 },
+      "round": { "hash": "c91dc3b0", "offset": [0, 70], "scale": 0.6, "rotation": 0 }
+    },
+    "DiscordantNote": {
+      "tab": { "hash": "540da02f", "offset": [0, 40], "scale": 0.7, "rotation": 0 },
+      "select": { "hash": "0ccb351d", "offset": [0, 0], "scale": 0.7, "rotation": 0 },
+      "round": { "hash": "d09c0cad", "offset": [0, 70], "scale": 0.6, "rotation": 0 }
+    }
+  }
+}

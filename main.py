@@ -1,7 +1,7 @@
 import os
 import shutil
 
-from agent_data import gen_textures, create_ini, export
+from agent_data import collect_agents
 from masks import gen_masks
 from config import CLEAN_EXPORTS, EXPORT_DIR
 
@@ -17,11 +17,14 @@ if CLEAN_EXPORTS:
     os.makedirs(EXPORT_DIR)
     print("")
 
+# collect required agents
+collect_agents()
+
 # Generate mindscape textures
-gen_textures()
+#gen_textures()
 
 # Generate INI file
-create_ini()
+#create_ini()
 
 # Export to ZIP
-export()
+#export()

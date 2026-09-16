@@ -1,199 +1,95 @@
 from __future__ import annotations
 
-import typing
-from typing import TypedDict, Literal, List
-from textwrap import dedent
-import json
 import os
-import shutil
+import json
+from typing import Literal
 
-from config import MOD_NAME, MOD_VERSION, CUR_AGENT, SOURCE_DIRS, EXPORT_DIR
-import textures
+from config import FILTER_EXCLUDE, AGENTS, SOURCE_DIRS
 
 HashType = Literal['Select', 'Tab', 'Round']
 
-class SkinData(TypedDict, total=False):
-    tab: str
-    select: str
-
-agent_dict: TypedDict[str, List[SkinData]]
-with open('agents.json', 'rt', encoding='utf-8') as agent_data:
-    agent_dict = json.load(agent_data)
-
 # --------------------------------------------------------------
 
-def create_texture_override(agent: str, skin_idx: int, source_dirs: list[str], hash_value: str, kind: HashType) -> str:
-    skin_str: str = ""
-    if skin_idx > 0:
-        skin_str = "Skin" + (str(skin_idx) if skin_idx > 1 else "")
+agent_data: dict
+def collect_agents():
+    print("Collecting agents...")
 
-    available_resources = []
-    for source_dir in source_dirs:
-        variant = os.path.basename(source_dir)
-        if variant == "sources":
-            variant = ""
+    global agent_data
+    with open('agents_new.json', 'rt', encoding='utf-8') as d:
+        agent_data = json.load(d)
 
-        file_name = f"{kind.lower()}/{agent}{skin_str}{variant}.png"
-        if os.path.exists(f"{EXPORT_DIR}/{MOD_NAME}/{file_name}"):
-            available_resources.append((source_dir, variant, file_name))
+    # quick validation of agent names
+    for agent in AGENTS:
+        if agent not in agent_data:
+            print(
+                f"Requested agent '{agent}' could not be found! Make sure the "
+                "agent's name is spelled correctly, or add them to the "
+                "agents.json file if you haven't already."
+            )
 
-    # agent has no data to override
-    if not available_resources:
-        return ""
-
-    # first avaiable resource
-    fallback_source, fallback_variant, fallback_file = available_resources[0]
-
-    # multiple resource mode (toggles)
-    if len(available_resources) > 1:
-        override_string = dedent(f"""
-            [TextureOverride{agent}{skin_str}{kind}]
-            hash = {hash_value}
-            if $use{kind} == 1
-            \t""")
-
-        resource_string = ""
-
-        for i, (source_dir, variant, file_name) in enumerate(
-                available_resources):
-            resource_name = f"{agent}{skin_str}{variant}{kind}"
-
-            override_string += dedent(f"""\
-                   {"\telse " if i > 0 else "\t"}if $variant == {i}
-                            this = Resource{resource_name}
-                    """)
-
-            resource_string += dedent(f"""\
-                [Resource{resource_name}]
-                filename = {file_name}
-                """)
-        override_string += "    endif\nendif\n"
-
-        return override_string + resource_string
+    # exclude/include filters
+    if FILTER_EXCLUDE:
+        agent_data = {k: agent_data[k] for k in agent_data if k not in AGENTS}
     else:
-        # single resource mode (no toggles)
-        source_dir, variant, file_name = available_resources[0]
-        return dedent(f"""        
-            [TextureOverride{agent}{skin_str}{kind}]
-            hash = {hash_value}
-            if $use{kind} == 1
-                this = Resource{agent}{skin_str}{variant}{kind}
-            endif
-            [Resource{agent}{skin_str}{variant}{kind}]
-            filename = {file_name}
-            """)
+        agent_data = {k: agent_data[k] for k in agent_data if k in AGENTS}
 
-def create_ini_header(mod_name: str, mod_ver: str, source_dirs: list[str]) -> str:
-    text = f"{mod_name} v{mod_ver}"
-    header = f"; {text} {'-' * (60 - len(text))}\n\n"
+    count = len(agent_data)
+    print(f"Found {count} agent entr{"ies" if count != 1 else "y"}!\n")
+    # print([k for k in agent_data])
 
-    if len(source_dirs) > 1:
-        header += dedent(f"""\
-            ; Constants {'-' * (60 - 9)}
-            
-            [Constants]
-            global persist $variant = 0
-            global persist $useSelect = 1
-            global persist $useTab = 1
-            global persist $useRound = 1
-            
-            [KeySwapVariant]
-            key = ctrl space
-            type = cycle
-            $variant = {','.join(str(i) for i in range(len(source_dirs)))}
-            
-            [KeyToggleSelect]
-            key = ctrl alt shift 1
-            type = cycle
-            $useSelect = 0,1
-            
-            [KeyToggleTab]
-            key = ctrl alt shift 2
-            type = cycle
-            $useTab = 0,1
-            
-            [KeyToggleRound]
-            key = ctrl alt shift 3
-            type = cycle
-            $useRound = 0,1
-        
-            """)
+    return validate_agents()
 
-    header += f"; Overrides {'-' * (60 - 9)}\n"
+def validate_agents():
+    print("Validating agent entries...")
 
-    return header
+    # validate source files and hashes
+    agents_to_process: dict = {}
+    invalid_entries, valid_entries = 0, 0
+    for [agent, skins] in agent_data.items():
 
+        # verify a source file exists in <SRC>/<Agent><Skin>.png
+        for i, [skin, data] in enumerate(skins.items()):
+            source_file = f"{agent}{skin}.png"
+            source_lenient = f"{agent}.png"
 
-def gen_textures() -> None:
-    print("Generating textures...")
+            for j, [source_dir] in enumerate(SOURCE_DIRS):
+                variant_name = os.path.basename(source_dir)
+                if variant_name == "sources":
+                    variant_name = ""
 
-    export_dir = os.path.join(EXPORT_DIR, MOD_NAME)
-    if not os.path.exists(export_dir):
-        os.makedirs(export_dir)
+                path = os.path.join(source_dir, source_file)
+                path_lenient = os.path.join(source_dir, source_lenient)
 
-    agents_to_process = {CUR_AGENT: agent_dict[CUR_AGENT]} if CUR_AGENT else agent_dict
+                exists = os.path.exists(path)
+                exists_lenient = os.path.exists(path_lenient) if i == 0 else False
 
-    skin_generators = {
-        'select': textures.gen_select,
-        'tab': textures.gen_tab,
-        'round': textures.gen_round
-    }
+                # todo: handle fallbacks
+                #   if VARIANT_FALLBACK is True, and j0 has a source, add a flag to exp data (dont just regen file)
+                #   same for SKIN_FALLBACK and i0 having source
+                #   probably add data.variant_fallback and data.skin_fallback?
+                # default skin (0) doesn't need a skin name in the source file
+                if not exists and not exists_lenient:
+                    print(
+                        f"[{agent}] Couldn't find a source file for Skin #{i} "
+                        f"'{skin}' in '{source_dir}'! Make sure the file "
+                        f"'{source_file}' "
+                        f"{f"or '{source_lenient}'" if i == 0 else "" }is "
+                        "present in the source directories!"
+                    )
+                    invalid_entries += 1
+                    continue
+                else:
+                    data["source"] = path if exists else path_lenient
+                    valid_entries += 1
 
-    fallback_dir = SOURCE_DIRS[0] if len(SOURCE_DIRS) > 1 else ""
+                # AnbyStreetStreakM6
+                key = agent + skin + variant_name
+                if key not in agents_to_process:
+                    agents_to_process[key] = {}
+                agents_to_process[key] = data
 
-    # Nightmare
-    for name, skins in agents_to_process.items():
-        for i, skin in enumerate(skins):
-            for skin_type, generator in skin_generators.items():
-                if skin.get(skin_type, {}).get('hash'):
-                    hash, offset, scale, rotation = skin[skin_type].values()
-                    for source_dir in SOURCE_DIRS:
-                        generator(source_dir, fallback_dir, export_dir, name, i, offset, scale, rotation)
-    print("")
+    total = valid_entries + invalid_entries
+    print(f"Found {valid_entries}/{total} valid agent entr{"ies" if total != 1 else "y"}!")
+    print(agents_to_process)
 
-def create_ini() -> None:
-    print("Creating INI file...")
-    mod_folder = os.path.join(EXPORT_DIR, MOD_NAME)
-    if not os.path.exists(mod_folder):
-        os.makedirs(mod_folder)
-
-    ini_path = os.path.join(mod_folder, f"{MOD_NAME.replace(" ", "")}.ini")
-    with open(ini_path, 'w', encoding='utf-8') as output:
-        output.write(create_ini_header(MOD_NAME, MOD_VERSION, SOURCE_DIRS))
-
-        for name, skins in agent_dict.items():
-            result = ""
-            skin_types = ['select', 'tab', 'round']
-            for i, skin in enumerate(skins):
-                for skin_type in skin_types:
-                    if skin.get(skin_type, {}).get('hash'):
-                        result += create_texture_override(
-                            name,
-                            i,
-                            SOURCE_DIRS,
-                            skin[skin_type]['hash'],
-                            typing.cast(HashType, skin_type.capitalize())
-                        )
-
-            if result:
-                output.write(f"\n; {name} {'-' * (60 - len(name))}\n" + result)
-
-        output.write(
-            "\n; INI file generated by brewffee's Mindscape Icons generator :3c\n" +
-            "; If you have any issues with this mod, please contact me on " +
-            "discord at @brewffee.\n" +
-            ";\n" +
-            "; The source code for this mod's generator is available at " +
-            "https://github.com/brewffee/ZZZ-Mindscape-Icons-Mod\n"
-
-        )
-
-    print("Finished generating agent data! :P\n")
-
-
-def export() -> None:
-    print("Exporting mod contents to zip...")
-    zip_name = MOD_NAME.lower().replace(" ", "_") + "_v" + MOD_VERSION
-
-    shutil.make_archive(os.path.join("export", zip_name), "zip", "export", MOD_NAME)
-    print(f"Finished exporting {MOD_NAME} to {zip_name}.zip! x3c\n")
+    return agents_to_process

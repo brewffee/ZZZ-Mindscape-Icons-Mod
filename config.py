@@ -16,4 +16,15 @@ EXPORT_DIR: str = "export"
 FALLBACK_MODE: str = "original"
 
 # Should the export directory be cleaned before generation?
-CLEAN_EXPORTS: bool = False
+CLEAN_EXPORTS: bool = True
+
+# Should INIs be split by type (Select/Tab/Round)?
+SEPARATE_INIS: bool = True
+
+# Contrast multiplier for generated textures.
+# 1.0 = unchanged, lower values reduce contrast, higher values increase it.
+CONTRAST_MULTIPLIER: float = 1.0
+
+# Saturation multiplier for generated textures.
+# 1.0 = unchanged, lower values reduce saturation, higher values increase it.
+SATURATION_MULTIPLIER: float = 1.2

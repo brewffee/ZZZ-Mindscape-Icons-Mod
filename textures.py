@@ -3,9 +3,9 @@ import os
 
 from pathlib import Path
 from typing import Tuple, Union
-from PIL import Image, PngImagePlugin
+from PIL import Image, ImageEnhance, PngImagePlugin
 
-from config import FALLBACK_MODE
+from config import CONTRAST_MULTIPLIER, FALLBACK_MODE, SATURATION_MULTIPLIER
 
 
 def apply_mask(
@@ -16,7 +16,7 @@ def apply_mask(
         image_offset: Tuple[int, int] = (1, 1),
         image_scale: float = 1.0,
         image_rotation: float = 0.0,
-        final_size: Tuple[int, int] = None,
+    final_size: Tuple[int, int] | None = None,
 ) -> None:
     mask = Image.open(mask_path).convert("RGBA")
     image = Image.open(image_path).convert("RGBA")
@@ -58,6 +58,20 @@ def apply_mask(
 
     if final_size is not None:
         result = result.resize(final_size, Image.Resampling.LANCZOS)
+
+    if CONTRAST_MULTIPLIER != 1.0 or SATURATION_MULTIPLIER != 1.0:
+        # Preserve alpha while adjusting visible RGB data.
+        alpha = result.getchannel("A")
+        rgb = result.convert("RGB")
+
+        if CONTRAST_MULTIPLIER != 1.0:
+            rgb = ImageEnhance.Contrast(rgb).enhance(CONTRAST_MULTIPLIER)
+
+        if SATURATION_MULTIPLIER != 1.0:
+            rgb = ImageEnhance.Color(rgb).enhance(SATURATION_MULTIPLIER)
+
+        result = rgb.convert("RGBA")
+        result.putalpha(alpha)
 
     if not os.path.exists(os.path.dirname(output_path)):
         os.makedirs(os.path.dirname(output_path))

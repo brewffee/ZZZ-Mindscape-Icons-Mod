@@ -1,24 +1,32 @@
 import os
 import shutil
 
-from agent_data import collect_agents
-from masks import gen_masks
-from config import CLEAN_EXPORTS, EXPORT_DIR
+import ini
+import masks
+import agent_data
+import config
 
 # --------------------------------------------------------------
 
+# todo: validate config values before processing instead of encounrtering as we go
+
 # Generate texture masks
-gen_masks()
+masks.generate()
 
 # Clean export dir
-if CLEAN_EXPORTS:
+if config.CLEAN_EXPORTS:
     print("Force clean requested! Recreating export directory...")
-    shutil.rmtree(EXPORT_DIR, ignore_errors=True)
-    os.makedirs(EXPORT_DIR)
+    shutil.rmtree(config.EXPORT_DIR, ignore_errors=True)
+    os.makedirs(config.EXPORT_DIR)
     print("")
 
 # collect required agents
-collect_agents()
+agent_data.collect()
+
+# test
+print(
+    ini.create_header() + ini.create_constants() + ini.create_footer()
+)
 
 # Generate mindscape textures
 #gen_textures()

@@ -4,6 +4,8 @@ from pathlib import Path
 from typing import List, Tuple, Union
 from PIL import Image, ImageDraw
 
+from config import RESOURCE_TYPES
+
 # calcs arc for rounded corners
 def calculate_arc_points(start: Tuple[float, float],
         end: Tuple[float, float],
@@ -40,7 +42,7 @@ def calculate_arc_points(start: Tuple[float, float],
 
     return points
 
-def create_mask(
+def create(
         size: Tuple[float, float],
         scale_factor: int,
         points: List[Tuple[float, float]],
@@ -67,7 +69,7 @@ def create_mask(
     mask.save(output_path, "PNG")
     print(f"Mask saved as {output_path}")
 
-def selector_mask_points(scale_factor: int = 4) -> List[Tuple[float, float]]:
+def select_mask_points(scale_factor: int = 4) -> List[Tuple[float, float]]:
     scaled_points = []
     for point in [
         *calculate_arc_points((137, 29), (173, 0), 24),     # topleft
@@ -81,7 +83,7 @@ def tab_mask_points(scale_factor: int = 6) -> List[Tuple[float, float]]:
     scaled_points = []
     for point in [
         (2, 22),                                            # edge topleft
-        *calculate_arc_points((2,4), (6, 0), 24),           # topleft
+        *calculate_arc_points((2, 4), (6, 0), 24),          # topleft
         *calculate_arc_points((295, 0), (310, 10), 24),     # ropright
         (356, 106),                                         # edge topright
         *calculate_arc_points((356, 124), (349, 128), 24),  # bottomright
@@ -89,9 +91,23 @@ def tab_mask_points(scale_factor: int = 6) -> List[Tuple[float, float]]:
     ]: scaled_points.append((point[0] * scale_factor, point[1] * scale_factor))
     return scaled_points
 
-def gen_masks() -> None:
+def generate() -> None:
     print("Generating masks...")
-    create_mask((512, 500), 4, selector_mask_points(4), "masks/selector.png")
-    create_mask((358, 128), 6, tab_mask_points(6), "masks/tab.png")
-    create_mask((284, 284), 6, [], "masks/round.png", True)
+    if not bool(RESOURCE_TYPES):
+        print(
+            "No resource types specified! This may be due to an error in the " 
+            "config. Please check that RESOURCE_TYPES in `config.py` has "
+            "at least one value specified, or that the name is typed correctly."
+        )
+        print("Cannot resolve error automatically, aborting...")
+        exit(1)
+
+    types_set = set(RESOURCE_TYPES)
+    if "Select" in types_set:
+        create((512, 500), 4, select_mask_points(4), "masks/select.png")
+    if "Tab" in types_set:
+        create((358, 128), 6, tab_mask_points(6), "masks/tab.png")
+    if "Round" in types_set:
+        create((284, 284), 6, [], "masks/round.png", True)
+    # No mask for portrait resources; those depend on agent artwork size
     print("")

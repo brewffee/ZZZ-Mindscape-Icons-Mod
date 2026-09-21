@@ -1,3 +1,7 @@
+AUTHOR: str = "brewffee"
+CONTACT: str = "@brewffee on Discord"
+REPO_URL: str = "https://github.com/brewffee/ZZZ-Mindscape-Icons-Mod"
+
 MOD_NAME: str = "Mindscape Icons"
 MOD_VERSION: str = "3.2-dev"
 
@@ -9,6 +13,7 @@ FILTER_EXCLUDE = True
 # provided in the agents.json file
 AGENTS: list[str] = []
 
+DATA_FILE: str = "agents_new.json"
 SOURCE_DIRS: list[str] = ["sources_new/M6", "sources_new/M3"]
 EXPORT_DIR: str = "export"
 
@@ -23,15 +28,18 @@ CLEAN_EXPORTS: bool = False
 #   Should the INI file be split into multiple files by icon type?
 #   SPLIT_INI: bool = False
 
-# ===================================================================
-# How the generator should behave when a source file is missing.
-#
-# "skip" will ignore the missing variant and won't generate an INI entry for
-# it, defaulting to ZZZ's original texture.
-#
-# "original" will use the first source's resource as a fallback.
-# FALLBACK_MODE: str = "original"
-#
-# To update textures for a single agent, replace None with that agent's name
-# CUR_AGENT: str | None = None
+# todo:
+#   configurable resource types (select, tab, round, portrait)
+RESOURCE_TYPES: list[str] = ["Select", "Tab", "Round"] # or ["Portrait"]
+
+# todo:
+#   keybinds (variant, on/off <type>)
+VARIANT_KEYBIND = "ctrl space"  # switch between variants
+SKIN_KEYBINDS: list[str] = [
+    "ctrl alt shift 1",         # enable/disable select icons
+    "ctrl alt shift 2",         # enable/disable tab icons
+    "ctrl alt shift 3",         # enable/disable round icons
+    "ctrl alt shift 4",         # enable/disable portrait icons
+]
+
 

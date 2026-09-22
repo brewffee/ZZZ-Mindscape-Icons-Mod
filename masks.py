@@ -93,14 +93,6 @@ def tab_mask_points(scale_factor: int = 6) -> List[Tuple[float, float]]:
 
 def generate() -> None:
     print("Generating masks...")
-    if not bool(RESOURCE_TYPES):
-        print(
-            "No resource types specified! This may be due to an error in the " 
-            "config. Please check that RESOURCE_TYPES in `config.py` has "
-            "at least one value specified, or that the name is typed correctly."
-        )
-        print("Cannot resolve error automatically, aborting...")
-        exit(1)
 
     types_set = set(RESOURCE_TYPES)
     if "Select" in types_set:

@@ -9,7 +9,7 @@ def create_header():
     return header
 
 
-def create_toggle(type, keybind) -> tuple[str, str]:
+def create_toggle(type: str, keybind: str) -> tuple[str, str]:
     return (
         f"global persist $use{type} = 1\n",
         dedent(f"""\

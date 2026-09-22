@@ -5,10 +5,11 @@ import ini
 import masks
 import agent_data
 import config
+import validate
 
 # --------------------------------------------------------------
 
-# todo: validate config values before processing instead of encounrtering as we go
+validate.pre_check()
 
 # Generate texture masks
 masks.generate()
@@ -21,7 +22,9 @@ if config.CLEAN_EXPORTS:
     print("")
 
 # collect required agents
-agent_data.collect()
+agents_to_process = agent_data.collect()
+
+#validate.post_check(agents_to_process)
 
 # test
 print(

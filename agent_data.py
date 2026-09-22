@@ -1,12 +1,7 @@
-from __future__ import annotations
-
 import os
 import json
-from typing import Literal
 
 from config import FILTER_EXCLUDE, AGENTS, SOURCE_DIRS, DATA_FILE
-
-HashType = Literal['Select', 'Tab', 'Round']
 
 # --------------------------------------------------------------
 

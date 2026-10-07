@@ -35,6 +35,11 @@
       "tab": { "hash": "540da02f", "offset": [0, 40], "scale": 0.7, "rotation": 0 },
       "select": { "hash": "0ccb351d", "offset": [0, 0], "scale": 0.7, "rotation": 0 },
       "round": { "hash": "d09c0cad", "offset": [0, 70], "scale": 0.6, "rotation": 0 }
+    },
+    {
+      "tab": { "hash": "8b625a6a", "offset": [0, 40], "scale": 0.7, "rotation": 0 },
+      "select": { "hash": "8935e914", "offset": [0, 0], "scale": 0.7, "rotation": 0 },
+      "round": { "hash": "d19ac410", "offset": [0, 70], "scale": 0.6, "rotation": 0 }
     }
   ],
   "AriaRobot": [
@@ -253,6 +258,11 @@
       "tab": { "hash": "b34e9d55", "offset": [-90, 100], "scale": 0.66, "rotation": 0 },
       "select": { "hash": "02f95f93", "offset": [-90, 100], "scale": 0.7, "rotation": 0 },
       "round": { "hash": "2def8355", "offset": [-80, 120], "scale": 0.6, "rotation": 0 }
+    },
+    {
+      "tab": { "hash": "61edf27e", "offset": [-90, 100], "scale": 0.66, "rotation": 0 },
+      "select": { "hash": "9f24231b", "offset": [-90, 100], "scale": 0.7, "rotation": 0 },
+      "round": { "hash": "0c7bd56d", "offset": [-80, 120], "scale": 0.6, "rotation": 0 }
     }
   ],
   "Nekomata": [
@@ -447,6 +457,11 @@
       "tab": { "hash": "b338a781", "offset": [-80, 100], "scale": 0.66, "rotation": 0 },
       "select": { "hash": "51d6bb11", "offset": [-80, 40], "scale": 0.7, "rotation": 0 },
       "round": { "hash": "cd2d9aba", "offset": [-120, 110], "scale": 0.66, "rotation": 0 }
+    },
+    {
+      "tab": { "hash": "0e7e7833", "offset": [-80, 100], "scale": 0.66, "rotation": 0 },
+      "select": { "hash": "fa26f011", "offset": [-80, 40], "scale": 0.7, "rotation": 0 },
+      "round": { "hash": "dfd044df", "offset": [-120, 110], "scale": 0.66, "rotation": 0 }
     }
   ],
   "Trigger": [

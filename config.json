@@ -1,0 +1,19 @@
+{
+  "MOD_NAME": "Mindscape Icons",
+  "MOD_VERSION": "3.4",
+  "CUR_AGENT": null,
+  "EXPORT_DIR": "export",
+  "FALLBACK_MODE": "original",
+  "CLEAN_EXPORTS": true,
+  "SEPARATE_INIS": true,
+  "AUTO_APPLY_DRAFT_CHANGES": true,
+  "BACKUP_FILES": true,
+  "CONTRAST_MULTIPLIER": 1.0,
+  "SATURATION_MULTIPLIER": 1.2,
+  "IMAGE_UPSCALER": "realesrgan",
+  "SOURCE_DIRS": [
+    "sources/M6",
+    "sources/M3",
+    "sources/Chibi"
+  ]
+}

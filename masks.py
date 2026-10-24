@@ -41,12 +41,25 @@ def calculate_arc_points(start: Tuple[float, float],
     return points
 
 def create_mask(
-        size: Tuple[float, float],
+        size: Tuple[int, int],
         scale_factor: int,
         points: List[Tuple[float, float]],
         output_path: Union[str, Path] = "masks/mask.png",
         circle: bool = False
 ) -> None:
+    mask = render_shape(size, scale_factor, points, circle)
+    if not os.path.exists(os.path.dirname(output_path)):
+        os.makedirs(os.path.dirname(output_path))
+    mask.save(output_path, "PNG")
+    print(f"Mask saved as {output_path}")
+
+
+def render_shape(
+        size: Tuple[int, int],
+        scale_factor: int,
+        points: List[Tuple[float, float]],
+        circle: bool = False
+) -> Image.Image:
     width, height = size
     scaled_size = (width * scale_factor, height * scale_factor)
 
@@ -61,11 +74,7 @@ def create_mask(
     # gives softer look after downacale
     mask = mask.resize((width, height), Image.Resampling.LANCZOS)
 
-    if not os.path.exists(os.path.dirname(output_path)):
-        os.makedirs(os.path.dirname(output_path))
-
-    mask.save(output_path, "PNG")
-    print(f"Mask saved as {output_path}")
+    return mask
 
 def selector_mask_points(scale_factor: int = 4) -> List[Tuple[float, float]]:
     scaled_points = []
@@ -95,3 +104,13 @@ def gen_masks() -> None:
     create_mask((358, 128), 6, tab_mask_points(6), "masks/tab.png")
     create_mask((284, 284), 6, [], "masks/round.png", True)
     print("")
+
+
+def preview_mask(kind: str) -> Image.Image:
+    if kind == "select":
+        return render_shape((512, 500), 4, selector_mask_points(4))
+    if kind == "tab":
+        return render_shape((358, 128), 6, tab_mask_points(6))
+    if kind == "round":
+        return render_shape((284, 284), 6, [], True)
+    raise ValueError(f"Unknown mask type: {kind}")

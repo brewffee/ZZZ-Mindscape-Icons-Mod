@@ -1,0 +1,602 @@
+{
+  "Alice": [
+    {
+      "tab": { "hash": "93ef2127", "offset": [0, 0], "scale": 1.8, "rotation": 0.0 },
+      "select": { "hash": "7bf57b2b", "offset": [0, 0], "scale": 3.65, "rotation": 0.0 },
+      "round": { "hash": "4c8624e0", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "e65f485b", "offset": [0, 0], "scale": 1.8, "rotation": 0.0 },
+      "select": { "hash": "be5c555f", "offset": [0, 0], "scale": 3.65, "rotation": 0.0 },
+      "round": { "hash": "fded7f09", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Anby": [
+    {
+      "tab": { "hash": "fcc6b33f", "offset": [0, 0], "scale": 1.8, "rotation": 0.0 },
+      "select": { "hash": "ea820cf1", "offset": [0, 20], "scale": 3.6, "rotation": 0.0 },
+      "round": { "hash": "6ccdc893", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Anton": [
+    {
+      "tab": { "hash": "3ca717ef", "offset": [0, 0], "scale": 1.8, "rotation": -33.984 },
+      "select": { "hash": "a6238c73", "offset": [-65, 0], "scale": 3.8, "rotation": 0.0 },
+      "round": { "hash": "849e9321", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Aria": [
+    {
+      "tab": { "hash": "6b425446", "offset": [0, 0], "scale": 1.9, "rotation": 0.0 },
+      "select": { "hash": "93e3f638", "offset": [-40, 0], "scale": 4.0, "rotation": 0.0 },
+      "round": { "hash": "c91dc3b0", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "540da02f", "offset": [0, 0], "scale": 1.9, "rotation": 0.0 },
+      "select": { "hash": "0ccb351d", "offset": [-40, 0], "scale": 4.0, "rotation": 0.0 },
+      "round": { "hash": "d09c0cad", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "8b625a6a", "offset": [0, 0], "scale": 1.9, "rotation": 0.0 },
+      "select": { "hash": "8935e914", "offset": [-40, 0], "scale": 4.0, "rotation": 0.0 },
+      "round": { "hash": "d19ac410", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "AriaRobot": [
+    {
+      "round": { "hash": "93cf3e5c", "offset": [0, 32], "scale": 2.6, "rotation": 0.0 }
+    },
+    {
+      "round": { "hash": "8f0591cd", "offset": [0, 32], "scale": 2.6, "rotation": 0.0 }
+    }
+  ],
+  "Astra": [
+    {
+      "tab": { "hash": "df13c5de", "offset": [0, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "474d00d2", "offset": [10, 0], "scale": 3.65, "rotation": 0.0 },
+      "round": { "hash": "991a5e85", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "1ed7d804", "offset": [0, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "67d1b710", "offset": [0, 0], "scale": 3.65, "rotation": 0.0 },
+      "round": { "hash": "5cbf8663", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Banyue": [
+    {
+      "tab": { "hash": "37024446", "offset": [13, 40], "scale": 1.85, "rotation": 0.0 },
+      "select": { "hash": "4bf29b9f", "offset": [0, 0], "scale": 3.8, "rotation": 0.0 },
+      "round": { "hash": "21fca91f", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Belle": [
+    {
+      "round": { "hash": "45062ca9", "offset": [0, 0], "scale": 3.0, "rotation": 0.0 }
+    },
+    {
+      "round": { "hash": "17d6921a", "offset": [0, 0], "scale": 3.0, "rotation": 0.0 }
+    },
+    {
+      "round": { "hash": "cda7943d", "offset": [0, 0], "scale": 3.0, "rotation": 0.0 }
+    },
+    {
+      "round": { "hash": "de187580", "offset": [0, 0], "scale": 3.0, "rotation": 0.0 }
+    }
+  ],
+  "Ben": [
+    {
+      "tab": { "hash": "a611b261", "offset": [31, 50], "scale": 1.8, "rotation": 45.504 },
+      "select": { "hash": "04756464", "offset": [-24, 0], "scale": 4.5, "rotation": 0.0 },
+      "round": { "hash": "4543102a", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Billy": [
+    {
+      "tab": { "hash": "de11fb92", "offset": [0, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "76a27829", "offset": [-6, 0], "scale": 3.3, "rotation": -17.856 },
+      "round": { "hash": "954e655e", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Burnice": [
+    {
+      "tab": { "hash": "ef514533", "offset": [0, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "56258fce", "offset": [0, 0], "scale": 3.3, "rotation": 0.0 },
+      "round": { "hash": "a02782f7", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Caesar": [
+    {
+      "tab": { "hash": "d3e117bb", "offset": [0, 0], "scale": 2.1, "rotation": 0.0 },
+      "select": { "hash": "a580c5c6", "offset": [0, 0], "scale": 4.0, "rotation": 0.0 },
+      "round": { "hash": "6bc4f466", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Cissia": [
+    {
+      "tab": { "hash": "b764f7fc", "offset": [0, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "e69be151", "offset": [33, 0], "scale": 3.95, "rotation": 1.728 },
+      "round": { "hash": "ae23fb06", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Claret": [
+    {
+      "tab": { "hash": "f97546f3", "offset": [0, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "4162e8be", "offset": [41, 0], "scale": 4.2, "rotation": 0.0 },
+      "round": { "hash": "93be04ad", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Corin": [
+    {
+      "tab": { "hash": "1f4fea0b", "offset": [0, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "9ec5D7fe", "offset": [0, 0], "scale": 3.8, "rotation": 0.0 },
+      "round": { "hash": "b548d6a2", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Dialyn": [
+    {
+      "tab": { "hash": "96c4e0ac", "offset": [0, 0], "scale": 1.6, "rotation": 0.0 },
+      "select": { "hash": "3c1eae4a", "offset": [0, 0], "scale": 3.9, "rotation": 0.576 },
+      "round": { "hash": "8fdb72b1", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Ellen": [
+    {
+      "tab": { "hash": "6c54850d", "offset": [12, -10], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "6fdd590c", "offset": [0, 0], "scale": 4.2, "rotation": 0.0 },
+      "round": { "hash": "d82e1165", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "a5c30495", "offset": [12, -10], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "1c162e63", "offset": [0, 0], "scale": 4.2, "rotation": 0.0 },
+      "round": { "hash": "688d0cbe", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Evelyn": [
+    {
+      "tab": { "hash": "579a4b03", "offset": [0, 0], "scale": 1.8, "rotation": 0.0 },
+      "select": { "hash": "30a3ba9e", "offset": [0, 0], "scale": 4.0, "rotation": 0.0 },
+      "round": { "hash": "688d0cbe", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Grace": [
+    {
+      "tab": { "hash": "0671beba", "offset": [0, 12], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "405493ef", "offset": [0, 0], "scale": 4.0, "rotation": 0.0 },
+      "round": { "hash": "8dad1963", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Harumasa": [
+    {
+      "tab": { "hash": "dea2ec24", "offset": [0, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "01a28d1f", "offset": [0, -20], "scale": 3.8, "rotation": 0.0 },
+      "round": { "hash": "12513be6", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Hugo": [
+    {
+      "tab": { "hash": "8d1e4119", "offset": [-11, -31], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "30697268", "offset": [0, 0], "scale": 3.8, "rotation": 0.0 },
+      "round": { "hash": "e5d92bd2", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Jane": [
+    {
+      "tab": { "hash": "cbe98417", "offset": [0, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "96cc573a", "offset": [0, 0], "scale": 3.6, "rotation": 0.0 },
+      "round": { "hash": "7a22d3bb", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "b44ac3ee", "offset": [0, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "85760b49", "offset": [0, 0], "scale": 3.6, "rotation": 0.0 },
+      "round": { "hash": "b592dbb6", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "JuFufu": [
+    {
+      "tab": { "hash": "4c40d3aa", "offset": [0, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "bbb6a093", "offset": [-62, 0], "scale": 3.8, "rotation": 0.0 },
+      "round": { "hash": "1f0d24b6", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Koleda": [
+    {
+      "tab": { "hash": "e9146789", "offset": [0, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "0c8caa1e", "offset": [0, 0], "scale": 4.0, "rotation": 0.0 },
+      "round": { "hash": "81d340f2", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Lighter": [
+    {
+      "tab": { "hash": "a302421d", "offset": [0, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "d2059699", "offset": [-47, 0], "scale": 4.0, "rotation": 0.0 },
+      "round": { "hash": "2693b31c", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Lucia": [
+    {
+      "tab": { "hash": "8ef7845d", "offset": [0, 0], "scale": 1.8, "rotation": 0.0 },
+      "select": { "hash": "b9db2c8d", "offset": [0, 0], "scale": 4.0, "rotation": 0.0 },
+      "round": { "hash": "9d2c4b70", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Lucy": [
+    {
+      "tab": { "hash": "66494aea", "offset": [0, -20], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "0B482873", "offset": [0, 0], "scale": 3.8, "rotation": 0.0 },
+      "round": { "hash": "7ac49f1e", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "f4ec9dc2", "offset": [0, -20], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "f0c25ba0", "offset": [0, 0], "scale": 3.8, "rotation": 0.0 },
+      "round": { "hash": "c46cd543", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Lycaon": [
+    {
+      "tab": { "hash": "4f0296bc", "offset": [0, 56], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "bb7346b4", "offset": [0, 27], "scale": 3.6, "rotation": 0.0 },
+      "round": { "hash": "d1b9a355", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Manato": [
+    {
+      "tab": { "hash": "9ac8ed71", "offset": [0, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "63c1a589", "offset": [-62, 27], "scale": 3.6, "rotation": 0.0 },
+      "round": { "hash": "05e10a5f", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "ae9eee53", "offset": [0, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "1d2d2c2a", "offset": [-62, 27], "scale": 3.6, "rotation": 0.0 },
+      "round": { "hash": "6f59e585", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Miyabi": [
+    {
+      "tab": { "hash": "70d8c49c", "offset": [0, -18], "scale": 1.8, "rotation": 0.0 },
+      "select": { "hash": "174309bb", "offset": [0, 0], "scale": 3.7, "rotation": 0.0 },
+      "round": { "hash": "a9ecce2f", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "3a9f8a9f", "offset": [0, -18], "scale": 1.8, "rotation": 0.0 },
+      "select": { "hash": "ac04c2f1", "offset": [0, 0], "scale": 3.7, "rotation": 0.0 },
+      "round": { "hash": "322f4744", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Nangong": [
+    {
+      "tab": { "hash": "f19b08bb", "offset": [0, 0], "scale": 1.8, "rotation": 0.0 },
+      "select": { "hash": "96dc628c", "offset": [-41, 0], "scale": 4.0, "rotation": 0.0 },
+      "round": { "hash": "8843a0d2", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "b34e9d55", "offset": [0, 0], "scale": 1.8, "rotation": 0.0 },
+      "select": { "hash": "02f95f93", "offset": [-41, 0], "scale": 4.0, "rotation": 0.0 },
+      "round": { "hash": "2def8355", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "61edf27e", "offset": [0, 0], "scale": 1.8, "rotation": 0.0 },
+      "select": { "hash": "9f24231b", "offset": [-41, 0], "scale": 4.0, "rotation": 0.0 },
+      "round": { "hash": "0c7bd56d", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Nekomata": [
+    {
+      "tab": { "hash": "273ec328", "offset": [17, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "309b1c34", "offset": [20, 0], "scale": 4.0, "rotation": 0.0 },
+      "round": { "hash": "584cb653", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Nicole": [
+    {
+      "tab": { "hash": "76b8d2f3", "offset": [0, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "5dbcc13c", "offset": [0, -4], "scale": 4.0, "rotation": 0.0 },
+      "round": { "hash": "06765346", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "a39a4c20", "offset": [0, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "623bd6fa", "offset": [0, -4], "scale": 4.0, "rotation": 0.0 },
+      "round": { "hash": "b5da3f40", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Norma": [
+    {
+      "tab": { "hash": "6350ab0a", "offset": [0, -44], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "0d5d76d4", "offset": [-51, -20], "scale": 4.0, "rotation": 0.0 },
+      "round": { "hash": "b52464c5", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Orphie": [
+    {
+      "tab": { "hash": "19ccda9d", "offset": [0, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "036afa32", "offset": [-55, 0], "scale": 3.8, "rotation": 0.0 },
+      "round": { "hash": "9f18d234", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "PanYinhu": [
+    {
+      "tab": { "hash": "46795a4a", "offset": [0, 20], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "ee0f018a", "offset": [-11, -16], "scale": 4.5, "rotation": 0.0 },
+      "round": { "hash": "89d8b30e", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "e2fe2a89", "offset": [0, 20], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "15b9c5ac", "offset": [-11, -16], "scale": 4.5, "rotation": 0.0 },
+      "round": { "hash": "03b8a6b3", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Phoenix": [
+    {
+      "tab": { "hash": "35ac8a9c", "offset": [0, -42], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "0ee3ca2b", "offset": [0, 0], "scale": 4.3, "rotation": 0.0 },
+      "round": { "hash": "24d1b230", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "5a7797c1", "offset": [0, -42], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "c4794fb8", "offset": [0, 0], "scale": 4.3, "rotation": 0.0 },
+      "round": { "hash": "2e6975cf", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "5a7797c1", "offset": [0, 0], "scale": 1.0, "rotation": 0.0 },
+      "select": { "hash": "66729123", "offset": [0, 0], "scale": 1.0, "rotation": 0.0 },
+      "round": { "hash": "2e6975cf", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Piper": [
+    {
+      "tab": { "hash": "5aef8344", "offset": [0, -14], "scale": 1.8, "rotation": 0.0 },
+      "select": { "hash": "613545a0", "offset": [25, 0], "scale": 3.8, "rotation": 0.0 },
+      "round": { "hash": "027ddb95", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Promeia": [
+    {
+      "tab": { "hash": "369964bc", "offset": [0, 11], "scale": 2.2, "rotation": 0.0 },
+      "select": { "hash": "337bf52a", "offset": [0, 0], "scale": 4.2, "rotation": 1.728 },
+      "round": { "hash": "aa9a32c9", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Pulchra": [
+    {
+      "tab": { "hash": "a1c3c4ac", "offset": [0, -48], "scale": 2.2, "rotation": 0.0 },
+      "select": { "hash": "d92ae487", "offset": [0, 0], "scale": 3.9, "rotation": 0.0 },
+      "round": { "hash": "237caec9", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Pyrois": [
+    {
+      "tab": { "hash": "75ee595e", "offset": [0, -19], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "8108a7b1", "offset": [-14, -40], "scale": 3.8, "rotation": 0.0 },
+      "round": { "hash": "fa1116e4", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Qingyi": [
+    {
+      "tab": { "hash": "6a4daa3a", "offset": [0, 29], "scale": 2.6, "rotation": 0.0 },
+      "select": { "hash": "567dfad8", "offset": [-54, 0], "scale": 4.7, "rotation": 0.0 },
+      "round": { "hash": "c15c0321", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Remielle": [
+    {
+      "tab": { "hash": "f9736e2a", "offset": [0, 0], "scale": 2.6, "rotation": 0.0 },
+      "select": { "hash": "389f3c5f", "offset": [24, 0], "scale": 4.3, "rotation": 0.0 },
+      "round": { "hash": "9411f320", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "217abe7b", "offset": [0, 0], "scale": 2.6, "rotation": 0.0 },
+      "select": { "hash": "4c468c78", "offset": [23, 0], "scale": 4.3, "rotation": 0.0 },
+      "round": { "hash": "fa502f0c", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "613bd6ab", "offset": [0, 0], "scale": 2.6, "rotation": 0.0 },
+      "select": { "hash": "033d8649", "offset": [23, 0], "scale": 4.3, "rotation": 0.0 },
+      "round": { "hash": "ee92981a", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "f1eeaad6", "offset": [0, 0], "scale": 2.6, "rotation": 0.0 },
+      "select": { "hash": "488c2e84", "offset": [23, 0], "scale": 4.3, "rotation": 0.0 },
+      "round": { "hash": "1ff8e74e", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Rina": [
+    {
+      "tab": { "hash": "c9a1ebb6", "offset": [0, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "d090ee99", "offset": [-16, 0], "scale": 3.8, "rotation": 0.0 },
+      "round": { "hash": "d619b889", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Roxy": [
+    {
+      "tab": { "hash": "ecc1074a", "offset": [0, -35], "scale": 2.3, "rotation": 0.0 },
+      "select": { "hash": "b150fbba", "offset": [27, 0], "scale": 4.2, "rotation": 0.0 },
+      "round": { "hash": "cd277d63", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "SAnby": [
+    {
+      "tab": { "hash": "5b73ab49", "offset": [0, 0], "scale": 2.3, "rotation": 0.0 },
+      "select": { "hash": "af83bf1f", "offset": [9, 0], "scale": 3.9, "rotation": 0.0 },
+      "round": { "hash": "87aaa68a", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "SBilly": [
+    {
+      "tab": { "hash": "671b64a2", "offset": [-35, 0], "scale": 2.2, "rotation": 0.0 },
+      "select": { "hash": "012eacab", "offset": [0, 0], "scale": 4.0, "rotation": 0.0 },
+      "round": { "hash": "fdbfdf6b", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Seed": [
+    {
+      "tab": { "hash": "5088013d", "offset": [0, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "3f544258", "offset": [14, 0], "scale": 3.8, "rotation": 0.0 },
+      "round": { "hash": "c0f2225f", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Seth": [
+    {
+      "tab": { "hash": "870cd37c", "offset": [0, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "e3a538c6", "offset": [0, 0], "scale": 3.9, "rotation": 0.0 },
+      "round": { "hash": "4e60c93f", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Severian": [
+    {
+      "select": { "hash": "9b2089d0", "offset": [-33, 0], "scale": 4.0, "rotation": 0.0 },
+      "tab": { "hash": "20fc69ef", "offset": [0, 60], "scale": 1.8, "rotation": 0.0 },
+      "round": { "hash": "9e89af8c", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Shunguang": [
+    {
+      "tab": { "hash": "8a4c7132", "offset": [0, 0], "scale": 1.6, "rotation": 0.0 },
+      "select": { "hash": "1d3d3a23", "offset": [-43, 0], "scale": 3.8, "rotation": 0.0 },
+      "round": { "hash": "2dfa0ed0", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "64f20e30", "offset": [0, 0], "scale": 1.0, "rotation": 0.0 },
+      "select": { "hash": "11998cfc", "offset": [-43, 0], "scale": 3.8, "rotation": 0.0 },
+      "round": { "hash": "2ca53475", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Sigrid": [
+    {
+      "tab": { "hash": "f579fe69", "offset": [0, -4], "scale": 1.8, "rotation": 0.0 },
+      "select": { "hash": "e6d9bfd3", "offset": [-58, 0], "scale": 3.8, "rotation": 0.0 },
+      "round": { "hash": "9d760250", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "f250d985", "offset": [0, -4], "scale": 1.8, "rotation": 0.0 },
+      "select": { "hash": "cdf1ed1d", "offset": [-58, 0], "scale": 3.8, "rotation": 0.0 },
+      "round": { "hash": "59ade3bf", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Soldier11": [
+    {
+      "tab": { "hash": "728f0f41", "offset": [0, 16], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "08853ee2", "offset": [-34, 0], "scale": 4.0, "rotation": 0.0 },
+      "round": { "hash": "3b44d8b4", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Soukaku": [
+    {
+      "tab": { "hash": "fcc2aca0", "offset": [0, -18], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "a5e7028e", "offset": [-47, 0], "scale": 3.8, "rotation": 0.0 },
+      "round": { "hash": "f78fd4ac", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Sunna": [
+    {
+      "tab": { "hash": "d90b8fb8", "offset": [0, 0], "scale": 2.2, "rotation": 0.0 },
+      "select": { "hash": "f1edb9c3", "offset": [0, 0], "scale": 4.3, "rotation": 7.488 },
+      "round": { "hash": "dc932323", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "b338a781", "offset": [0, 0], "scale": 2.2, "rotation": 0.0 },
+      "select": { "hash": "51d6bb11", "offset": [0, 0], "scale": 4.3, "rotation": 7.488 },
+      "round": { "hash": "cd2d9aba", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "0e7e7833", "offset": [0, 0], "scale": 2.2, "rotation": 0.0 },
+      "select": { "hash": "fa26f011", "offset": [0, 0], "scale": 4.3, "rotation": 7.488 },
+      "round": { "hash": "dfd044df", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Trigger": [
+    {
+      "tab": { "hash": "7d4b7bd0", "offset": [0, -34], "scale": 1.8, "rotation": 0.0 },
+      "select": { "hash": "7c87a91d", "offset": [27, 0], "scale": 4.0, "rotation": 0.0 },
+      "round": { "hash": "8f4ba37c", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Velina": [
+    {
+      "tab": { "hash": "5e7e9657", "offset": [0, 0], "scale": 2.3, "rotation": 0.0 },
+      "select": { "hash": "60b653bf", "offset": [-47, 0], "scale": 4.4, "rotation": 0.0 },
+      "round": { "hash": "4a84b837", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "fbe42396", "offset": [0, 0], "scale": 2.3, "rotation": 0.0 },
+      "select": { "hash": "8d0ac27d", "offset": [-47, 0], "scale": 4.4, "rotation": 0.0 },
+      "round": { "hash": "080c1659", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Vivian": [
+    {
+      "tab": { "hash": "c4c45127", "offset": [0, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "af7488a8", "offset": [-43, 0], "scale": 3.9, "rotation": 0.0 },
+      "round": { "hash": "f334587a", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "84e06de0", "offset": [0, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "ec21351f", "offset": [-43, 0], "scale": 3.9, "rotation": 0.0 },
+      "round": { "hash": "c88f9303", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Wise": [
+    {
+      "round": { "hash": "6b2bdbdc", "offset": [0, 0], "scale": 3.0, "rotation": 0.0 }
+    },
+    {
+      "round": { "hash": "1e304cb7", "offset": [0, 0], "scale": 3.0, "rotation": 0.0 }
+    },
+    {
+      "round": { "hash": "726b2114", "offset": [0, 0], "scale": 3.0, "rotation": 0.0 }
+    },
+    {
+      "round": { "hash": "a4810b20", "offset": [0, 0], "scale": 3.0, "rotation": 0.0 }
+    }
+  ],
+  "Yanagi": [
+    {
+      "tab": { "hash": "7d098af3", "offset": [0, -22], "scale": 2.2, "rotation": 0.0 },
+      "select": { "hash": "dbc0f937", "offset": [-55, 0], "scale": 4.2, "rotation": 0.576 },
+      "round": { "hash": "c4dafc3a", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Yidhari": [
+    {
+      "tab": { "hash": "76d31c13", "offset": [-36, -36], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "6e7f941d", "offset": [0, 0], "scale": 3.8, "rotation": 0.0 },
+      "round": { "hash": "9e794c67", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Yixuan": [
+    {
+      "tab": { "hash": "e8b15d3f", "offset": [0, 0], "scale": 1.8, "rotation": 0.0 },
+      "select": { "hash": "f0542b34", "offset": [0, 0], "scale": 3.7, "rotation": 0.0 },
+      "round": { "hash": "e79910aa", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "0fa88007", "offset": [0, 0], "scale": 1.0, "rotation": 0.0 },
+      "select": { "hash": "c691d56d", "offset": [0, 0], "scale": 3.7, "rotation": 0.0 },
+      "round": { "hash": "bd1f1f5e", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Yuzuha": [
+    {
+      "tab": { "hash": "8c042e95", "offset": [18, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "5a87c216", "offset": [0, 0], "scale": 3.9, "rotation": 0.0 },
+      "round": { "hash": "c164248c", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    },
+    {
+      "tab": { "hash": "a4340446", "offset": [18, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "ba9a27b0", "offset": [0, 0], "scale": 3.9, "rotation": 0.0 },
+      "round": { "hash": "af2880ae", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "Zhao": [
+    {
+      "tab": { "hash": "f8d54341", "offset": [0, 0], "scale": 2.0, "rotation": 0.0 },
+      "select": { "hash": "6104019e", "offset": [0, 0], "scale": 4.0, "rotation": 0.0 },
+      "round": { "hash": "90e4971d", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ],
+  "ZhuYuan": [
+    {
+      "tab": { "hash": "01ef757f", "offset": [0, 0], "scale": 1.8, "rotation": 0.0 },
+      "select": { "hash": "4f01ccaa", "offset": [-93, 0], "scale": 3.8, "rotation": 0.0 },
+      "round": { "hash": "8c95e4d6", "offset": [0, 0], "scale": 1.42, "rotation": 0.0 }
+    }
+  ]
+}
